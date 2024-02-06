@@ -1,0 +1,20 @@
+section.breadcrumbs
+    .container
+        ul.breadcrumbs-list(itemscope="" itemtype="http://schema.org/BreadcrumbList")
+            li.breadcrumbs-item(itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem")
+                a.breadcrumbs-go-back(href="")
+                    +icon('arrow-back')
+                a.breadcrumbs__link(itemprop="item" href="")
+                    meta(itemprop="name" content=" Главная")
+                    span Главная
+                meta(itemprop="position" content="1")
+            li.breadcrumbs-item(itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem")
+                a.breadcrumbs__link(itemprop="item" href="")
+                    meta(itemprop="name" content=" Услуги призывникам")
+                    span Услуги призывникам
+                meta(itemprop="position" content="2")
+            //li.breadcrumbs-item(itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem")
+            //    span.breadcrumbs__current Услуги призывникам
+            //    meta(itemprop="item" content=" ")
+            //    meta(itemprop="name" content="Услуги призывникам")
+            //    meta(itemprop="position" content="3")

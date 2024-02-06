@@ -1,0 +1,54 @@
+.see-also__left
+  width: 38%;
+.see-also__articles
+  display flex
+  flex-direction column
+  row-gap 28px
+  width 62%
+.see-also__container
+  display flex
+  justify-content space-between
+  column-gap 50px
+.see-article
+  display flex
+  justify-content space-between
+  background-color #fff
+  border-radius 23px
+  padding 38px 33px
+.see-article__link
+  display flex
+  justify-content center
+  align-items center
+  background-color #E0202B
+  position relative
+  size(42px)
+  min-width 42px
+  border-radius 50%
+  cursor pointer
+  transition ease .2s
+  padding 15px
+  &:hover
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+  &:active
+    box-shadow: 0 0 4px 3px transparent;
+    transform scale(0.9)
+  .icon
+    absolute-center()
+    size(15px)
+    stroke #fff
+    fill transparent
+    stroke-width 1.5
+    transition ease .2s
+
+.see-article__text
+  padding-right 30px
+.see-article__title
+  font-size 32px
+  font-weight 700
+  font-family 'Montserrat',sans-serif
+  color #242424
+  margin-bottom 10px
+  text-transform uppercase
+.see-article__desc
+  font-size 20px
+  color #686868

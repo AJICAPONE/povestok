@@ -1,0 +1,39 @@
+.practice-articles
+  .b-articles__title
+    display flex
+    align-items center
+    .icon
+      size(14px)
+      fill #3D3C3C
+      margin-right 9px
+      transform rotate(180deg)
+      transition ease .2s
+.practice-articles__title.active
+  .icon
+    transform rotate(0deg)
+.practice-articles__blog
+  .sub-title__desc
+    max-width 60%
+    margin-bottom 48px
+.practice-tabs
+  display flex
+  align-items center
+  flex-wrap wrap
+  gap 15px
+  margin-bottom 28px
+.practice-tab
+  display flex
+  justify-content: center;
+  align-items center
+  color #9F9F9F
+  border-radius 40px
+  height 48px
+  padding 13px 32px
+  transition ease .2s
+  font-size 18px
+  cursor pointer
+  &:hover
+    color #E0202B
+.practice-tab.active
+  background-color #949CA0
+  color #fff

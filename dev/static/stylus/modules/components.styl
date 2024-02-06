@@ -1,0 +1,44 @@
+.pb-0
+  padding-bottom 0
+.input-class
+  display flex
+  justify-content center
+  align-items center
+  background-color #fff
+  border-radius 14px
+  height 52px
+  font-size 16px
+  padding 16px 24px
+  color #000
+  border none
+  &:placeholder
+    color #9F9F9F
+.radio
+  display flex
+  justify-content center
+  align-items center
+  border-radius 50%
+  border 2px solid #686868
+  size(24px)
+  position relative
+  margin-right 8px
+.radio-flex.active
+  .radio
+    border 2px solid #3D3C3C
+    &:before
+      content '';
+      size(14px)
+      absolute-center()
+      background-color #3D3C3C
+      border-radius 50%
+
+.radio-flex
+  display flex
+  align-items center
+  margin-right 28px
+  cursor pointer
+  &:last-child
+    margin-right 0
+  span
+    color #3D3C3C
+    font-size 16px

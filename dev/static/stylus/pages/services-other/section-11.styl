@@ -1,0 +1,59 @@
+.faq-list
+  display flex
+  flex-direction column
+.faq-item
+  display flex
+  justify-content space-between
+  flex-direction column
+  background-color #949CA0
+  border-radius 26px
+  margin-bottom 12px
+  &:last-child
+    margin-bottom 0
+.faq-item.active
+  .faq-icon
+    .icon
+      transform rotate(180deg)
+.faq-wrapper
+  padding: 42px 87px 36px 87px;
+.faq-question
+  display flex
+  justify-content space-between
+  align-items center
+  padding: 18px 36px;
+  cursor pointer
+  span
+    font-size 18px
+    font-family 'Montserrat',sans-serif
+    font-weight 600
+    color #fff
+    padding-right 30px
+.faq-icon
+  display flex
+  justify-content center
+  align-items center
+  border-radius 50%
+  background-color #fff
+  cursor pointer
+  transition ease .2s
+  size(42px)
+  min-width 42px
+  &:hover
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+    background-color #E0202B
+    .icon
+      stroke #fff
+  &:active
+    box-shadow: 0 0 4px 3px transparent;
+    transform scale(0.9)
+  .icon
+    size(10px)
+    fill transparent
+    stroke #374349
+    transition ease .2s
+.faq-answer
+  display none
+  background-color #fff
+  border-radius 23px
+  margin: 0px 8px 8px 8px;
+  padding 23px 28px

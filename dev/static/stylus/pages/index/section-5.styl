@@ -1,0 +1,59 @@
+.together-wrapper
+  .sub-title-3
+    padding-bottom 50px
+.together-list
+  display grid
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  counter-reset: my-counter;
+  align-content: stretch
+  margin-bottom: 70px
+.together-item
+  position relative
+  background-color #fff
+  border-radius 23px
+  padding 85px 20px 40px 20px
+
+  &:before
+    content: counter(my-counter, decimal-leading-zero);
+    counter-increment: my-counter;
+    position absolute
+    right 28px
+    top 10px
+    font-size 150px
+    color #F9EBE1B0
+    font-family 'Montserrat',sans-serif
+    font-weight 700
+    line-height .9
+  &:after
+    content ''
+    clip-path: polygon(50% 80%, 0 0, 100% 0)
+    width 92px
+    height 34px
+    background-color #fff
+    position absolute
+    bottom -50px
+    left 50%
+    transform: translate(-50%, -50%);
+
+.together-item__title
+  position relative
+  font-family 'Montserrat',sans-serif
+  font-size 20px
+  font-weight 700
+  color #3D3C3C
+  margin-bottom 18px
+  padding-right 35px
+  text-transform uppercase
+  z-index 2
+.together-item__desc
+  position relative
+  font-size 16px
+  color #9F9F9F
+  z-index 2
+
+.together-button
+  font-size 16px
+  font-weight 400
+  margin 0 auto
+

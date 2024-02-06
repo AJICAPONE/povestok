@@ -1,0 +1,138 @@
+.blog
+  padding-top 0
+.blog-search
+  margin-bottom 36px
+.b-search__input
+  display flex
+  align-items center
+  max-width 538px
+  position relative
+  input
+    background-color #fff
+    border none
+    border-radius 13px
+    height 52px
+    width 100%
+    padding 20px
+    font-size 15px
+    &:placeholder
+      color #868686
+.b-search__button
+  display flex
+  justify-content center
+  align-items center
+  width 50px
+  height 100%
+  position absolute
+  transform translate(0,-50%)
+  right 5px
+  top 50%
+  cursor pointer
+  .icon
+    size(25px)
+    fill transparent
+    stroke #1F2022
+    stroke-width 2px
+.blog-category,.blog-tags
+  background-color #fff
+  border-radius 23px
+  padding 30px 35px
+.blog-category
+  margin-bottom 36px
+.b-categ__title,.b-tags__title,.b-articles__title
+  font-size 24px
+  font-family 'Montserrat',sans-serif
+  font-weight 700
+  color #3D3C3C
+  margin-bottom 20px
+  span
+    color #9F9F9F
+    margin-left 5px
+.b-categ__list,.b-tags__list
+  display flex
+  flex-wrap wrap
+  gap 16px
+.b-categ__item
+  display flex
+  align-items center
+  border 1px solid #9F9F9F
+  padding 9px 16px
+  height 40px
+  border-radius 14px
+  cursor pointer
+.b-tags__item
+  display flex
+  align-items center
+  background-color #F5F5F5
+  padding 10px 16px
+  height 40px
+  border-radius 14px
+  cursor pointer
+  font-family 'Montserrat',sans-serif
+.b-categ__icon,.b-tags__icon
+  display none
+  margin-left 6px
+  z-index 2
+  .icon
+    size(18px)
+    fill #F5F5F5
+.b-categ__item.active,.b-tags__item.active
+  background-color #949CA0
+  color #fff
+  font-weight 700
+  .b-categ__icon,.b-tags__icon
+    display flex
+.blog-tags
+  margin-bottom 42px
+.b-articles__list
+  display grid
+  grid-template-columns repeat(3,1fr)
+  gap 30px
+  margin-bottom 40px
+.b-articles__item
+  background-color #fff
+  border-radius 23px
+  padding 24px
+  border 1px solid #C8C8C8
+.b-articles__author
+  display flex
+  align-items center
+  margin-bottom 16px
+.b-articles__logo
+  size(28px)
+  min-width 28px
+  border-radius 50%
+  margin-right 10px
+.b-articles__name
+  font-size 16px
+  color #6B6B6B
+.b-articles__title
+  line-height 1.2
+  color #202020
+.b-articles__desc
+  font-size 16px
+  color #6B6B6B
+  margin-bottom 68px
+.b-articles__data
+  display flex
+  align-items center
+  flex-wrap wrap
+  gap 16px
+.b-articles__info
+  display flex
+  align-items center
+  background-color #F5F5F5
+  padding 14px
+  height 42px
+  border-radius 51px
+  .icon
+    size(26px)
+    fill #A2A9AD
+    margin-right 6px
+  span
+    color #9F9F9F
+    font-size 16px
+.blog-articles__load
+  margin 0 auto
+
+
