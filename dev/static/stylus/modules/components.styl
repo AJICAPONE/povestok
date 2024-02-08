@@ -281,11 +281,35 @@
     size(31px)
     fill #1C274C
     margin-bottom 5px
+    transition ease .3s
   span
     font-family 'Montserrat',sans-serif
     font-size 11px
     font-weight 400
     color #1C274C
+    transition ease .3s
+.mobile-menu__item.active
+  .icon
+    fill #375CD9
+  span
+    color #375CD9
+.menu-tab
+  display none
+  position: fixed;
+  bottom 0;
+  left 0
+  right 0
+  top 0
+  z-index 10
+  background-color #fff
+  padding 13px 16px
+  transition ease .3s
+  transform translateX(-100%);
+  will-change transform
+.overflow-body-hidden
+  overflow hidden
+.question-m-video__right
+  display none
 
 
 

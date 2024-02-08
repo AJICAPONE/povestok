@@ -26,6 +26,8 @@
     font-size 19px
   .confidence-desc
     font-size 16px
+  .index-wrapper
+    padding: 77px 300px 100px 36px;
 
 @media (max-width: 1199px)
   .tarif-slider__card
@@ -62,6 +64,20 @@
   .form-question__container
     width 100%
     z-index: 2;
+  .index-baner__img
+    display none
+  .index-wrapper
+    padding 36px
+  .site-reviews__wrapper
+    flex-direction column
+  .s-review__title
+    width 100%
+  .s-review__title
+    margin-bottom 20px
+  .together-list
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 40px;
 
 @media screen and (max-width: 992px)
   .header-top
@@ -159,7 +175,18 @@
     display flex
   .steps-list
     grid-template-columns: repeat(2, 1fr);
-
+  .see-also__wrapper2 .sub-title
+    padding-right 0
+  .packages__articles
+    grid-template-columns: repeat(1, 1fr);
+  .index-offers
+    width 100%
+  .s-review__list
+    flex-wrap wrap
+  .s-review__title
+    text-align center
+  section
+    padding 16px 0
 
 @media screen and (max-width: 768px)
   .header-bottom__menu
@@ -259,7 +286,7 @@
     text-align center
   .law-image
     .icon
-      size(270px)
+      size(270px,179px)
   .use-wrapper
     padding 33px 16px
   .use-item
@@ -423,7 +450,178 @@
     display block
   .reviews-slider .swiper-pagination
     bottom 101px !important
+  .menu-tab
+    display block
+    padding-top 70px
+  .menu-tab.active
+    transform translateX(0)
+  .menu-tab__close
+    position absolute
+    top 41px
+    right 32px
+    size(30px)
+    display flex
+    justify-content center
+    align-items center
+    .icon
+      size(20px)
+      fill #B8B8B8
+  .menu-tab__title
+    font-family 'Montserrat',sans-serif
+    font-size 24px
+    text-align center
+    font-weight 700
+    color #222222
+    margin-bottom 40px
+  .menu-tab__item
+    display block
+    background-color #EBEBEB
+    padding 20px
+    border-radius 23px
+    margin-bottom 12px
+    &:last-child
+      margin-bottom 0
+  .menu-item__title
+    display flex
+    justify-content space-between
+    margin-bottom 8px
+    span
+      font-family 'Montserrat',sans-serif
+      font-size 24px
+      font-weight 700
+      color #1D212C
+      text-transform uppercase
+  .menu-item__icon
+    display flex
+    justify-content center
+    align-items center
+    size(32px)
+    background-color #4E4E4E
+    border-radius 50%
+    min-width 32px
+    .icon
+      size(14px)
+      fill transparent
+      stroke #fff
+      stroke-width 2px
+  .menu-item__desc
+    font-size 14px
+    color #1D212C
+    padding-right 32px
+  .menu-tab__list
+    overflow-y scroll
+    height: calc(100dvh - 220px);
+    padding-bottom 30px
+    &::-webkit-scrollbar
+      width 0
+  .menu-tab__item-stats
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    background-color #E0E0E0
+    border-radius 16px
+    padding 20px
+  .menu-stats__block-count
+    font-size 71px
+    font-family 'Montserrat',sans-serif
+    font-weight 700
+    line-height 1.2
+    color #161616
+  .menu-stats__block
+    display flex
+    flex-direction column
+    align-items center
+    span
+      font-size 15px
+      color #161616
+  .menu-stats__title
+    font-size 18px
+    font-family 'Montserrat',sans-serif
+    font-weight 700
+    color #171717
+    text-transform uppercase
+    margin-bottom 32px
+    text-align center
+    padding 0 40px
+  .menu-item__social
+    display flex
+    align-items center
+  .menu-item__social-icon
+    display flex
+    justify-content center
+    align-items center
+    size(38px)
+    border-radius 50%
+    margin-right 12px
+    .icon
+      size(25px)
+      fill #fff
+  .menu-vk
+    background-color #07689F
+  .menu-whatsapp
+    background-color #71BF44
+  .menu-telega
+    background-color #039BE5
+  .menu-item__social-title
+    align-items center
+    margin-bottom 0
+  .social-networks
+    background-color #3B3B3B
+    border-radius 23px
+    padding 20px
+  .social-net__title
+    font-size 20px
+    font-family 'Montserrat',sans-serif
+    font-weight 700
+    color #fff
+    margin-bottom 12px
+    text-align center
+  .social-net__desc
+    font-size 14px
+    color #fff
+    margin-bottom 24px
+    text-align center
+  .social-net__links
+    display flex
+    align-items center
+    justify-content center
+    gap 20px
+  .social-net__item
+    img
+      size(42px)
+      border-radius 50%
+      border 1px solid #fff
+  .index-wrapper
+    padding 33px 16px
+  .index-wrapper
+    .sub-title-2
+      text-align center
+      font-size 28px
+    .sub-title__desc
+      text-align center
+      font-size 18px
+  .s-review__list
+    justify-content center
+  .site-reviews__wrapper
+    padding 33px 16px
+  .packages-wrapper
+    padding 33px 16px
+    .sub-title
+      font-size 24px
+      text-align center
+    .see-article__title
+      font-size 18px
+    .see-article__desc
+      font-size 13px
+  .packages__articles
+    gap 12px
+  .together-item__desc
+    font-size 15px
 @media screen and (max-width: 576px)
+
+  .together-list
+    grid-template-columns: repeat(1, 1fr);
   .h-logo .icon-logo2
     width 197px
   .h-mobile__phone, .h-mobile__search
@@ -478,6 +676,14 @@
     max-width 295px
   .t-item__par span
     font-size 13px
+  .index-offers
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  .s-review__title
+    font-size 24px
+  .packages__articles
+    .see-article
+      padding: 20px 10px;
 
 
 

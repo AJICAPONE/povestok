@@ -229,8 +229,25 @@ $(document).ready(function () {
 
     $('.search-button').on('click',function () {
        $('.mobile-search').addClass('active');
+        $('body').addClass('overflow-body-hidden');
     });
     $('.search-close').on('click',function () {
         $('.mobile-search').removeClass('active');
+        $('body').removeClass('overflow-body-hidden');
+    });
+
+    $('[data-menu]').on('click',function () {
+       let this_attr = $(this).attr('data-menu');
+       $(this).addClass('active').siblings().removeClass('active');
+       if($(this).hasClass('active')){
+           $('body').addClass('overflow-body-hidden');
+           $('#'+ this_attr).addClass('active').siblings().removeClass('active');
+       } else {
+           $('body').removeClass('overflow-body-hidden');
+       }
+    });
+    $('.menu-tab__close').on('click',function () {
+       $('body').removeClass('overflow-body-hidden');
+       $(this).parents('.menu-tab').removeClass('active');
     });
 });
