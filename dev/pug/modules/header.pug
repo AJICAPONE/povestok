@@ -22,8 +22,9 @@ header
         .container
             .header-bottom__container
                 .header-bottom__contacts
-                    a.h-logo
+                    a.h-logo(href="/")
                         +icon2('logo')
+                        +icon2('logo2')
                     .h-contacts
                         a.h-phone(href='tel:88006003158')
                             .h-phone__text 8-800-600-31-58
@@ -37,23 +38,28 @@ header
                                 a.h-social__link.h-vk(href="")
                                     +icon('vk   ')
                             span Напишите нам
+                    .h-mobile__contacts
+                        a.h-mobile__phone(href="tel:88006003158")
+                            +icon2('call')
+                        .h-mobile__search.search-button
+                            +icon('search')
                 .header-bottom__menu
                     .h-navigation
                         .h-navbar
                             nav.h-menu
                                 ul.h-menu__list
                                     li.h-menu__item
-                                        a.h-item__link(href="") услуги
+                                        a.h-item__link(href="/") услуги
                                     li.h-menu__item
-                                        a.h-item__link(href="") практика
+                                        a.h-item__link(href="/") практика
                                     li.h-menu__item
-                                        a.h-item__link(href="") база знаний
+                                        a.h-item__link(href="/") база знаний
                                     li.h-menu__item
-                                        a.h-item__link(href="") о компании
+                                        a.h-item__link(href="/") о компании
                                     li.h-menu__item
-                                        a.h-item__link(href="") отзывы
+                                        a.h-item__link(href="/") отзывы
                                     li.h-menu__item
-                                        a.h-item__link(href="") контакты
+                                        a.h-item__link(href="/") контакты
                             .h-search
                                 +icon('search')
                         .h-callback

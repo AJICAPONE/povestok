@@ -1,9 +1,483 @@
 // ================================== @media =================================//
-//@media screen and (max-width: 1199px)
-//
-//@media screen and (max-width: 992px)
-//
-//@media screen and (max-width: 576px)
+.h-mobile__contacts
+  display none
+@media (min-width: 576px)
+  .container
+    max-width: 540px;
+@media (min-width: 768px)
+  .container
+    max-width: 720px
+@media (min-width: 992px)
+  .container
+    max-width: 960px;
+@media (min-width: 1200px)
+  .container
+    max-width: 1140px;
+@media (min-width: 1400px)
+  .container
+    max-width 1350px
+
+@media screen and (max-width: 1400px)
+  .offer-wrapper
+    grid-template-columns: 160px 50% 1fr;
+  .sub-title
+    font-size 32px
+  .confidence-title
+    font-size 19px
+  .confidence-desc
+    font-size 16px
+
+@media (max-width: 1199px)
+  .tarif-slider__card
+    max-width 100%
+  ul.h-menu__list li a
+    font-size 14px
+  .offer-desc
+    font-size 20px
+  .offer-tab
+    display flex
+    flex-direction column
+  .tarif-advantages .swiper-wrapper
+    display flex
+    gap 0
+  .confidence-list
+    grid-template-columns: repeat(2, 1fr);
+  .use-list
+    grid-template-columns: repeat(2, 1fr);
+  .risk-container
+    display flex
+    flex-direction column
+  .risk-image
+    width 100%
+  .risk-text
+    width 100%
+  .faq-wrapper
+    padding 35px
+  .form-question__wrapper
+    display: flex;
+    flex-direction column
+  .form-question__baner
+    position: absolute;
+    bottom 146px
+  .form-question__container
+    width 100%
+    z-index: 2;
+
+@media screen and (max-width: 992px)
+  .header-top
+    display none
+  .h-logo
+    .icon-logo
+      display none
+    .icon-logo2
+      display flex
+  .h-callback
+    display none
+  .h-search
+    display none
+  .h-mobile__contacts
+    display flex
+    align-items center
+  .h-mobile__phone,.h-mobile__search
+    display flex
+    justify-content center
+    align-items center
+    border 1px solid #7B7B7B40
+    border-radius 50%
+    size(50px)
+    margin-right 12px
+    &:last-child
+      margin-right 0
+    .icon
+      size(30px)
+  .h-mobile__search
+    .icon
+      fill transparent
+      stroke #5C5C5C
+  .h-contacts
+    display none
+  .social-baner__wrapper
+    display flex
+    flex-direction column
+  .s-baner__text
+    width 100%
+    margin-bottom 39px
+  .offer-picture
+    display none
+  .offer-info
+    margin-right 0
+  .offer-wrapper
+    display flex
+  .law-container
+    flex-direction column-reverse
+  .law-text
+    width 100%
+  .law-image
+    width 50%
+    margin 0 auto
+  .see-also__container
+    display flex
+    flex-direction column
+  .see-also__articles
+    width 100%
+  .see-also__left
+    width 100%
+  .form-question__baner
+    display none
+  .m-menu__list
+    display grid
+    grid-template-columns repeat(2, 1fr)
+    gap 10px
+  .m-app__main
+    display flex
+    flex-direction column
+  .m-main__left
+    margin-bottom 30px
+  .footer-wrapper
+    flex-direction column
+  .footer-right
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    flex-direction row
+    gap 15px
+  .footer-left
+    margin-bottom 20px
+  .question-video__wrapper
+    flex-direction column
+  .question-video__left
+    width 100%
+    margin-bottom 30px
+  .question-video__right
+    width 100%
+  .risk-list
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  .reviews-slider
+    margin-bottom 33px
+  .mobile-search
+    display flex
+  .steps-list
+    grid-template-columns: repeat(2, 1fr);
+
+
+@media screen and (max-width: 768px)
+  .header-bottom__menu
+    display none
+  .main-title
+    font-size 30px
+    text-align center
+  .offer-picture
+    display flex
+    height 50dvh
+  .offer-wrapper
+    flex-direction column-reverse
+  .offer-info
+    margin-top -50px
+    box-shadow: 0px 4px 22.899999618530273px -10px #1C274C2E;
+    padding 16px
+  .offer-rating-count
+    font-size 16px
+  .offer-rating
+    justify-content center
+    .icon
+      size(19px)
+  .offer-desc
+    text-align center
+  .offer-option span, .calccost-offer span, .index-offer span
+    font-size 12px
+  .offer-tab
+    flex-direction row
+    padding 16px
+  .offer-price
+    font-size 20px
+  .offer-credit
+    font-size 13px
+  .calccost-title
+    display none
+  .button-2
+    min-width 100%
+  .offer-option .icon, .calccost-offer .icon, .index-offer .icon
+    size(20px)
+  .calccost-offer
+    width 100%
+  .calccost-wrapper
+    padding 33px 16px
+  .sub-title-2
+    font-size 28px
+    padding-bottom 18px
+  .slider-navigation
+    display none
+  .offer-options, .calccost-offers
+    gap 12px
+    margin-bottom 20px
+  .swiper-pagination
+    display block
+    bottom 0 !important
+  .sub-title__desc-mobile
+    display: block;
+    margin-bottom 20px
+  .question-video__right
+    display none
+  .question-m-video__right
+    width 100%
+    margin-bottom 22px
+  .question-video__left
+    padding-right 0
+    margin-bottom 0
+    .sub-title-2
+      text-align center
+      padding 0 50px 12px 50px
+    .sub-title__desc
+      text-align center
+  .question-video__wrapper
+    padding 33px 16px
+
+  .button-2
+    font-size 15px
+    font-weight 400
+  .calccost-offers
+    margin-bottom 0
+  .sub-title-3
+    font-size 28px
+  .confidence-item
+    padding 28px 16px
+    .icon
+      size(23px)
+      margin-bottom 16px
+  .confidence-title
+    font-size 17px
+    text-align center
+    margin-bottom 12px
+  .confidence-desc
+    font-size 12px
+  .law-text
+    .sub-title-2
+      text-align center
+  .law-text__desc
+    font-size 15px
+    text-align center
+  .law-image
+    .icon
+      size(270px)
+  .use-wrapper
+    padding 33px 16px
+  .use-item
+    flex-direction row
+    align-items start
+    padding 12px 16px
+    span
+      font-size 12px
+      text-align left
+    .icon
+      size(30px)
+      min-width 30px
+      margin-bottom 0
+  .use-list
+    gap 12px
+    grid-template-columns: repeat(1, 1fr);
+  .steps-list
+    grid-template-columns: repeat(1, 1fr);
+  .steps-item
+    padding 0 50px
+    span
+      font-size 16px
+  .steps-wrapper
+    padding 33px 16px
+  .risk-container
+    flex-direction column-reverse
+  .risk-text
+    .sub-title-2
+      text-align center
+  .risk-text__desc
+    font-size 16px
+    text-align center
+    margin-bottom 24px
+  .risk-list
+    grid-template-columns: repeat(1, 1fr);
+  .risk-item
+    align-items center
+  .risk-item__desc
+    font-size 13px
+    text-align center
+  .risk-item__rule
+    color #949CA0
+  .risk-image .icon
+    size(202px)
+  .risk-wrapper
+    padding 33px 16px
+  .faq-icon
+    size(32px)
+    min-width 32px
+  .faq-question
+    padding 16px 12px
+  .faq-question span
+    font-size 16px
+  .faq-answer
+    padding 12px
+    border-radius 9px
+  .faq-item
+    border-radius 14px
+  .faq-wrapper
+    padding 33px 16px
+  .slider-container
+    flex-direction column
+    align-items start
+  .reviews .slider-container
+    margin-bottom 0
+  .reviews-slider
+    margin-bottom 60px
+    .swiper-pagination
+      bottom -40px !important;
+  .review-card__person
+    flex-direction column
+    align-items start
+  .see-also__left
+    .sub-title
+      text-align center
+      padding-bottom 20px
+  .see-article__title
+    font-size 24px
+  .see-article
+    padding 20px 16px
+  .see-article__desc
+    font-size 15px
+  .f-question__title
+    text-align center
+    font-size 26px
+    margin-bottom 18px
+  .form-question__wrapper
+    padding 24px 16px
+  .f-question__desc
+    text-align center
+    font-size 15px
+  .f-connect__title
+    text-align center
+    font-weight 600
+    font-size 20px
+  .f-connect__social
+    flex-direction column
+    align-items start
+    margin-bottom 0
+  .f-question__connect
+    display flex
+    flex-direction column
+    align-items center
+  .radio-flex
+    margin-right 0
+    margin-bottom 15px
+  .f-question__form
+    flex-direction column
+    .input-class
+      margin-right 0
+      margin-bottom 20px
+  .f-question__attention
+    text-align center
+  .form-question__baner
+    display block
+    position relative
+    bottom: -24px;
+    right: -17px;
+    width 100%
+  .s-baner__links
+    display grid
+    grid-template-columns: repeat(2, 1fr);
+    width 100%
+    gap 33px
+  .s-baner__desc
+    font-size 14px
+  .m-menu__list
+    grid-template-columns: repeat(1, 1fr);
+    gap 20px
+  .m-menu__item
+    font-weight 700
+    text-transform uppercase
+    font-family 'Montserrat',sans-serif
+  .m-app__menu
+    border-bottom 1px solid #D0D0D0
+    padding-bottom 20px
+    margin-bottom 25px
+  .m-app__text
+    font-size 12px
+    color #5E5E5E
+  .m-left__title
+    font-size 32px
+    text-align center
+    margin-bottom 20px
+  .m-left__desc
+    font-size 20px
+    text-align center
+    margin-bottom 10px
+  .m-main__right
+    flex-direction column
+  .m-main__link
+    margin-right 0
+    margin-bottom 22px
+    &:last-child
+      margin-bottom 0
+  .m-app__main
+    padding 33px 16px
+  .social-baner__wrapper
+    padding 33px 16px
+  .mobule-menu
+    display block
+  .reviews-slider .swiper-pagination
+    bottom 101px !important
+@media screen and (max-width: 576px)
+  .h-logo .icon-logo2
+    width 197px
+  .h-mobile__phone, .h-mobile__search
+    size(42px)
+    .icon
+      size(24px)
+  .confidence-list
+    gap 12px
+  .confidence-desc
+    padding 0
+  .button-3
+    min-width 100%
+  .footer-right
+    display none
+  .footer-left
+    .footer__data:nth-child(1)
+      order 3
+      flex-direction column
+      text-align center
+    .footer__data:nth-child(2)
+      order 1
+      text-align center
+    .footer__data:nth-child(3)
+      order 2
+      margin-bottom 17px
+      text-align center
+  .s-baner__link img
+    size(56px)
+  .s-baner__name
+    font-size 18px
+  .s-baner__count span
+    font-size 14px
+  .form-question__baner
+    display: block;
+    position: relative;
+    bottom: -43px;
+    right: 166px;
+    width: 502px;
+    height: 294px;
+    object-fit: contain;
+  .breadcrumbs-item span
+    font-size 13px
+  .offer-picture
+    height 40dvh
+  .offer-price
+    white-space pre
+  .offer-credit
+    padding-left 50px
+  .tarif-slider__card
+    max-width 247px
+  .tarif-advantages__item
+    max-width 295px
+  .t-item__par span
+    font-size 13px
 
 
 

@@ -42,3 +42,250 @@
   span
     color #3D3C3C
     font-size 16px
+.popup
+  opacity 0
+  pointer-events none
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 999
+  background-color rgba(0, 0, 0, 0.5)
+  transition ease .3s
+.popup.active
+  opacity 1
+  pointer-events auto
+  .popup__wrapper
+    transform scale(1)
+.popup__wrapper
+  position relative
+  background-color #fff
+  border-radius 23px
+  padding 50px 70px
+  width 100%
+  max-width 720px
+  margin 0 auto
+  margin-top 30px
+  transform scale(0)
+  transition ease .3s
+.max-w-1336
+  max-width 1336px
+.popup-close
+  position absolute
+  right 30px
+  top 30px
+  display flex
+  justify-content center
+  align-items center
+  background-color #F2F2F2
+  border-radius 50%
+  size(60px)
+  cursor pointer
+  transition ease .2s
+  .icon
+    size(18px)
+    fill #E0202B
+  &:active
+    box-shadow: 0 0 4px 3px transparent;
+  &:hover
+    background-color #E0202B
+    box-shadow 0 0 4px 3px rgba(0,0,0,0.15)
+.input-select
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 28px
+  height 60px
+  background-color #F5F5F5
+  border-radius 14px
+  width 100%
+  margin-bottom 10px
+  cursor pointer
+.input-select__arrow
+  .icon
+    size(18px)
+    fill #3D3C3C
+.input-main__block
+  position relative
+  label
+    display block
+    font-size 24px
+    color #1D212C
+    font-weight 600
+    margin-bottom 30px
+.min-w-50
+  min-width 50%
+  width 50%
+.input-select__top
+  display flex
+.input-select__list
+  position relative
+  display none
+  background-color #f5f5f5
+  width 100%
+  border-radius 14px
+  padding 20px
+  overflow-y scroll
+  height auto
+  max-height 250px
+  &::-webkit-scrollbar
+    width 0
+.input-select__item
+  font-size 16px
+  color #000
+  transition ease .2s
+  cursor pointer
+  font-family 'Montserrat',sans-serif
+  font-weight 500
+  margin-bottom 20px
+  &:hover
+    color #E0202B
+  &:last-child
+    margin-bottom 0
+.input-select__placeholder
+  font-size 18px
+  font-weight 500
+  font-family 'Montserrat',sans-serif
+  color #3D3C3C
+.modal-active
+  overflow hidden
+// Мобильный поиск
+.mobile-search
+  display none
+  transition ease .3s
+  transform translateX(-100%)
+  will-change transform
+.mobile-search
+  position fixed
+  left 0
+  right 0
+  bottom 0
+  top 0
+  background-color #fff
+  z-index 30
+  flex-direction column
+  padding 52px 15px 15px 15px
+.mobile-search.active
+  display flex
+  transform translateX(0)
+.mobile-search__close
+  display flex
+  justify-content center
+  align-items center
+  margin 0 0 0 auto
+  size(36px)
+  .icon
+    size(21px)
+    fill #000000
+.mobile-search__title
+  font-family 'Montserrat',sans-serif
+  font-size 20px
+  font-weight 700
+  text-transform uppercase
+  margin 0 auto
+  margin-bottom 23px
+.mobile-search__block
+  display flex
+  align-items center
+  position relative
+  margin-bottom 28px
+.mobile-input
+  border 1px solid #AAAAAA
+  height 50px
+  padding 20px
+  font-size 15px
+  border-radius 8px
+  width 100%
+.mobile-input__delete
+  display none
+  justify-content center
+  align-items center
+  size(21px)
+  border 1px solid #9296A6
+  border-radius 50%
+  margin-right 10px
+
+  .icon
+    size(7px)
+    fill #9296A6
+.mobile-input__search
+  .icon
+    fill transparent
+    stroke #9296A6
+    stroke-width 1.5px
+    size(21px)
+.mobile-input__flex
+  display flex
+  align-items center
+  position absolute
+  transform translate(0,-50%)
+  right 21px
+  top 50%
+.mobile-serach__results
+  display flex
+  flex-direction column
+.mobile-search__label
+  font-weight 600
+  font-size 16px
+  color #5F5A5A
+  margin-bottom 29px
+.mobile-search__article
+  padding 20px
+  background-color #ECECEC
+  border-radius 16px
+  margin-bottom 12px
+.search-article__title
+  font-family 'Montserrat',sans-serif
+  font-size 15px
+  font-weight 700
+  margin-bottom 10px
+  color #1C1C1C
+.search-article__tag
+  padding 4px 12px
+  font-size 14px
+  color #000000
+  background-color #BABABA
+  width max-content
+  border-radius 10px
+.mobile-search__result
+  overflow-y scroll
+  height: calc(100dvh - 335px);
+  &::-webkit-scrollbar
+    width 3px
+.swiper-pagination
+  display none
+.swiper-pagination-bullet-active
+  background-color #3D3C3C !important
+.mobule-menu
+  display none
+  position: fixed;
+  bottom 0;
+  left 0
+  right 0
+  height 78px
+  z-index 100
+  background-color #fff
+  box-shadow: 0px 4px 24px 0px #00000026;
+  padding 13px 16px
+  user-select none
+.mobile-menu__list
+  display flex
+  align-items center
+  justify-content space-between
+.mobile-menu__item
+  display flex
+  flex-direction column
+  align-items center
+  .icon
+    size(31px)
+    fill #1C274C
+    margin-bottom 5px
+  span
+    font-family 'Montserrat',sans-serif
+    font-size 11px
+    font-weight 400
+    color #1C274C
+
+
+

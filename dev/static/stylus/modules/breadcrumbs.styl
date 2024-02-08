@@ -1,6 +1,9 @@
 .breadcrumbs-list
   display flex
   align-items center
+  overflow-x scroll
+  &::-webkit-scrollbar
+    height 0
 .breadcrumbs-go-back
   display flex
   justify-content center
@@ -24,9 +27,21 @@
 .breadcrumbs-item
   display flex
   align-items center
-  margin-right 24px
   span
     font-size 16px
     transition ease .3s
+    white-space pre
     &:hover
       color #E0202B
+.breadcrumbs-item
+  display flex
+  align-items center
+  &:after
+    content '|'
+    display block
+    margin 0 12px
+    color #9F9F9F
+
+.breadcrumbs-item:last-child
+  &:after
+    display none
