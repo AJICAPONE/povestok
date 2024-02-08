@@ -10,32 +10,39 @@ section.article
                         span Написать в WhatsApp
                         .article-widget__whatsapp
                             +icon('whatsapp')
+                .article-content__widget
+                    .article-widget__content
+                        .article-widget__content-title Содержание
+                        .article-widget__content-arrow
+                            +icon('arrow-down')
+                    .article-content__container
+                        .article-content__list
+                            .article-content__item-depth1 1.Как выглядит повестка в военкомат
+                            .article-content__item-depth2 1.1 Как выглядит повестка в военкомат
+                            .article-content__item-depth2 1.1 Как выглядит повестка в военкомат
+                        .article-content__list
+                            .article-content__item-depth1 2.Когда приходит повестка в военкомат
+                            .article-content__item-depth2 2.1 Как приходит повестка в военкомат
+                            .article-content__item-depth2 2.2 Как выглядит повестка в военкомат
+                        .article-content__list
+                            .article-content__item-depth1 3.Как выглядит повестка в военкомат
+                            .article-content__item-depth2 3.1 Как выглядит повестка в военкомат
+                            .article-content__item-depth2 3.2 Как выглядит повестка в военкомат
+                        .article-content__list
+                            .article-content__item-depth1 4.Как выглядит повестка в военкомат
+                            .article-content__item-depth2 4.1 Как выглядит повестка в военкомат
+                            .article-content__item-depth2 4.2 Как выглядит повестка в военкомат
+                        .article-content__list
+                            .article-content__item-depth1 5.Как выглядит повестка в военкомат
                 .article-widget__fixed
-                    .article-content__widget
-                        .article-widget__content
-                            .article-widget__content-title Содержание
-                            .article-widget__content-arrow
-                                +icon('arrow-down')
-                        .article-content__container
-                            .article-content__list
-                                .article-content__item-depth1 1.Как выглядит повестка в военкомат
-                                .article-content__item-depth2 1.1 Как выглядит повестка в военкомат
-                                .article-content__item-depth2 1.1 Как выглядит повестка в военкомат
-                            .article-content__list
-                                .article-content__item-depth1 2.Когда приходит повестка в военкомат
-                                .article-content__item-depth2 2.1 Как приходит повестка в военкомат
-                                .article-content__item-depth2 2.2 Как выглядит повестка в военкомат
-                            .article-content__list
-                                .article-content__item-depth1 3.Как выглядит повестка в военкомат
-                                .article-content__item-depth2 3.1 Как выглядит повестка в военкомат
-                                .article-content__item-depth2 3.2 Как выглядит повестка в военкомат
-                            .article-content__list
-                                .article-content__item-depth1 4.Как выглядит повестка в военкомат
-                                .article-content__item-depth2 4.1 Как выглядит повестка в военкомат
-                                .article-content__item-depth2 4.2 Как выглядит повестка в военкомат
-                            .article-content__list
-                                .article-content__item-depth1 5.Как выглядит повестка в военкомат
-
+                    .article-mobile__widget
+                        .article-mobile__title Ответим на все ваши вопросы
+                        .article-mobile__desc Проконсультируем по всем вопросам призыва на срочную службу
+                        form.f-question__form
+                            input.input-class(type="tel" placeholder="+7 (___) ___-__-__" data-mask="+7 (000) 000-00-00")
+                            button.button-2.min-w-318 Оставить заявку
+                        .f-question__attention Отправляя заявку вы соглашаетесь с
+                            a(href="/")=" политикой обработки персональных данных."
             .article-main__content
                 .article-test
                     h2.sub-title-3 Получится ли у вас освободиться от службы?
@@ -71,6 +78,15 @@ section.article
                         li Мобилизация.  Понятно, что такие повестки рассылаются в случае мобилизации тем, кого собираются мобилизовать.
                         li Военные сборы.  Некоторых военнообязанных граждан периодически забирают на так называемые военные сборы. Вызывают туда тоже с помощью повесток.
                         li Уточнение данных.  Иногда военкомат может вызвать повесткой для того, чтобы просто проверить актуальность имеющейся у него информации о гражданине.
+                    .article-mobile__widget
+                        .article-mobile__title Ответим на все ваши вопросы
+                        .article-mobile__desc Проконсультируем по всем вопросам призыва на срочную службу
+                        form.f-question__form
+                            input.input-class(type="tel" placeholder="+7 (___) ___-__-__" data-mask="+7 (000) 000-00-00")
+                            button.button-2.min-w-318 Оставить заявку
+                        .f-question__attention Отправляя заявку вы соглашаетесь с
+                            a(href="/")=" политикой обработки персональных данных."
+
                     p Подчеркну, что призывать на срочную службу в армию можно только во время призывов. Если комиссариат вызывает призывника повесткой вне призыва, то явиться призывник всё равно обязаны. А вот проходить какие-то призывные мероприятия, скажем, медкомиссию – уже нет.
                     .article-auto__widget
                         .article-auto__tag советуем почитать

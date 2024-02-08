@@ -28,6 +28,31 @@
     font-size 16px
   .index-wrapper
     padding: 77px 300px 100px 36px;
+  .b-articles__data
+    gap 12px
+  .b-articles__info span
+    font-size 14px
+  .b-articles__info
+    padding 10px
+    height 35px
+    .icon
+      size(22px)
+  .article-mobile__widget
+    padding 16px
+  .article-mobile__title
+    font-size 20px
+  .article-mobile__desc
+    font-size 14px
+    margin-bottom 20px
+  .stock-icon1
+    transform: translateX(-14%);
+  .stock-procent__wrap
+    span
+      &:nth-child(2)
+        display none
+  .stock-icon2
+    transform: translateX(404%);
+
 
 @media (max-width: 1199px)
   .tarif-slider__card
@@ -78,7 +103,24 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 25px;
     row-gap: 40px;
-
+  .article-widget__name
+    font-size 20px
+  .article-main__widget
+    padding 33px 16px
+  .article-content
+    padding 33px 16px
+  .article-content__widget
+    padding 16px
+  .article-widget__content-title
+    font-size 20px
+  .practice-slider .b-articles__title
+    font-size 16px
+  .b-articles__list
+    grid-template-columns: repeat(2, 1fr);
+  .stock-desc1
+    display none
+  .stock-icon2
+    transform: translateX(298%);
 @media screen and (max-width: 992px)
   .header-top
     display none
@@ -187,7 +229,61 @@
     text-align center
   section
     padding 16px 0
-
+  .article-wrapper
+    flex-direction column
+    padding 33px 16px
+  .article-info
+    padding-right 0
+    margin-bottom 93px
+  .article-icon
+    padding-right 0
+    margin 0 auto
+  .article-share
+    transform translate(-50%,-50%)
+    left: 50%;
+    top: 52%;
+    right auto
+  .article-main__wrapper
+    flex-direction column
+  .article-main__sidebar
+    width 100%
+  .article-main__content
+    width 100%
+  .tar-wrapper
+    flex-direction column
+  .tar-left
+    width 100%
+    margin-right 0
+    margin-bottom 40px
+  .tar-right
+    width 100%
+  .b-articles__item
+    padding 18px
+  .article-widget__fixed
+    display none
+  .article-content
+    .article-mobile__widget
+      background-color #F1F1F1
+      margin 24px 0
+      .f-question__form
+        .input-class
+          background-color #fff
+    .article-mobile__title
+      font-size 24px
+  .b-articles__list
+    grid-template-columns: repeat(2, 1fr);
+    gap 15px
+  .practice-baner__wrapper
+    padding 33px
+  .stock-wrapper
+    display none
+  .service-prizyv
+    .sub-title__desc
+      padding-right 0
+  .paketi-slider__card .offer-tab
+    padding 10px
+  .paketi-flex .sub-title__desc-mobile
+    padding-right 10%
 @media screen and (max-width: 768px)
   .header-bottom__menu
     display none
@@ -207,6 +303,7 @@
     font-size 16px
   .offer-rating
     justify-content center
+    align-items start
     .icon
       size(19px)
   .offer-desc
@@ -618,6 +715,156 @@
     gap 12px
   .together-item__desc
     font-size 15px
+  footer
+    padding-bottom 78px
+  .main-title
+    font-size 24px
+  .article-wrapper .offer-desc
+    font-size 18px
+  .article-share
+    top 58%
+  .article-widget__img
+    size(170px)
+  .article-content__item-depth1
+    font-size 16px
+    margin-bottom 8px
+  .article-content__container
+    border-top 1px solid #E3E3E3
+    padding-top 16px
+  .article-test
+    padding 33px 16px
+    .sub-title-3
+      font-size 24px
+      padding-bottom 16px
+    .test-desc
+      width 100%
+      font-size 15px
+  .article-content
+    .sub-title-2
+      font-size 24px
+      padding-bottom 20px
+    .sub-title-2__gray
+      font-size 24px
+    p
+      font-size 15px
+    li
+      font-size 15px
+  .article-auto__title
+    font-size 18px
+    margin-bottom 4px
+  .article-auto__widget
+    padding 16px
+  .article-auto__widget .see-article__link
+    top 9px
+    right 16px
+  .article-auto__desc
+    font-size 12px
+    color #3D3C3C
+  .article-citate
+    padding 33px 16px
+  .article-citate__desc
+    font-size 18px
+  .article-auto__widget
+    &:last-child
+      margin-bottom 0
+  .tar-right__title
+    text-align center
+  .tar-right
+    padding 33px 16px
+  .b-articles__list
+    grid-template-columns: repeat(1, 1fr);
+    gap 15px
+  .blog-category
+    padding 28px 16px
+    margin-bottom 20px
+  .blog-tags
+    padding 28px 16px
+  .b-categ__item
+    font-size 15px
+  .b-tags__item
+    font-size 15px
+  .b-categ__list,.b-tags__list
+    gap 12px
+  .blog-articles .b-articles__desc
+    margin-bottom 24px
+  .p-baner__title
+    font-size 24px
+  .practice-baner__wrapper
+    padding 33px 16px
+  .p-baner__desc
+    font-size 18px
+    font-weight 400
+    color #F0F0F0
+  .practice-step__title
+    font-size 28px
+  .practice-step__desc
+    font-size 16px
+  .practice-step
+    padding 21px 16px
+  .content-img__wrapper span
+    padding-left 0
+  .content-img__wrapper
+    margin-bottom 20px
+    img
+      object-fit cover
+      min-height 508px
+  .practice-main-content
+    .see-article
+      position relative
+    .see-article__title
+      flex-direction column
+      align-items start
+      span
+        text-transform none
+        font-size 24px
+    .see-article__title
+      font-size 24px
+      text-transform none
+      padding-right 90px
+    .see-article__link
+      position absolute
+      top 22px
+      right 18px
+    .see-article__text
+      padding-right 0
+    .see-article__desc
+      font-size 16px
+  .practice-tag__service
+    margin-bottom 10px
+  .practice-articles__blog .sub-title__desc
+    max-width 100%
+  .practice-tabs
+    overflow-x scroll
+    flex-wrap nowrap
+    margin 0 -10px
+    margin-bottom 28px
+    padding-left 10px
+    &::-webkit-scrollbar
+      height 0
+  .practice-tab
+    font-size 16px
+  .tarif-slider__wrapper
+    padding-bottom 23px
+  .service-prizyv
+    .sub-title
+      font-size 28px
+      padding-bottom 20px
+    .sub-title__desc
+      font-size 15px
+      color #000000
+  .task-slider__item
+    width 305px
+  .task-slider__text
+    padding-bottom 0
+    font-weight 400
+    font-size 15px
+  .task-slider
+    margin-bottom 23px
+  .task-slider__item .icon
+    margin-bottom 10px
+  .paketi-slider
+    margin-bottom 23px
+
 @media screen and (max-width: 576px)
 
   .together-list

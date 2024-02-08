@@ -73,11 +73,30 @@ $(document).ready(function () {
             autoHeight: true,
             watchOverflow: true,
             watchSlidesProgress: true,
-            spaceBetween: 32,
+            spaceBetween: 28,
             navigation: {
                 nextEl: ".review-button-next",
                 prevEl: ".review-button-prev",
             },
+            breakpoints: {
+                // mobile + tablet - 320-990
+                320: {
+                    slidesPerView: 'auto',
+                },
+                576:{
+                    slidesPerView: 1,
+                },
+                768:{
+                    slidesPerView: 2,
+                },
+                // desktop >= 991
+                992: {
+                    slidesPerView: 2,
+                }
+                // 1399: {
+                //     slidesPerView: 5,
+                // }
+            }
         });
 
         var swiperPractice = new Swiper(".practice-slider", {
@@ -91,7 +110,75 @@ $(document).ready(function () {
                 nextEl: ".practice-button-next",
                 prevEl: ".practice-button-prev",
             },
+            breakpoints: {
+                // mobile + tablet - 320-990
+                320: {
+                    slidesPerView: 'auto',
+                },
+                576:{
+                    slidesPerView: 1,
+                },
+                768:{
+                    slidesPerView: 2,
+                },
+            }
         });
+
+        var swiperTask = new Swiper(".task-slider", {
+            // slidesPerView: 'auto',
+            slidesPerView: 5,
+            autoHeight: true,
+            watchOverflow: true,
+            watchSlidesProgress: true,
+            spaceBetween: 26,
+            navigation: {
+                nextEl: ".review-button-next",
+                prevEl: ".review-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                // mobile + tablet - 320-990
+                320: {
+                    slidesPerView: 'auto',
+                },
+                576:{
+                    slidesPerView: 'auto',
+                },
+                768:{
+                    slidesPerView: 2,
+                },
+            }
+        });
+        var swiperPaket = new Swiper(".paketi-slider", {
+            slidesPerView: 'auto',
+            //slidesPerView: 4,
+            autoHeight: true,
+            watchOverflow: true,
+            watchSlidesProgress: true,
+            spaceBetween: 28,
+            navigation: {
+                nextEl: ".practice-button-next",
+                prevEl: ".practice-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                // mobile + tablet - 320-990
+                320: {
+                    slidesPerView: 'auto',
+                },
+                576:{
+                    slidesPerView: 2,
+                },
+                768:{
+                    slidesPerView: 2
+                },
+            }
+        });
+
 
         if($(window).width() <= 1199){
             var swiperAdvantages = new Swiper(".tarif-advantages", {
@@ -249,5 +336,9 @@ $(document).ready(function () {
     $('.menu-tab__close').on('click',function () {
        $('body').removeClass('overflow-body-hidden');
        $(this).parents('.menu-tab').removeClass('active');
+    });
+
+    $('.stock-close').on('click',function () {
+       $('.stock-wrapper').slideUp(200);
     });
 });
