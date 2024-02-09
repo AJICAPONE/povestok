@@ -1,6 +1,8 @@
 // ================================== @media =================================//
 .h-mobile__contacts
   display none
+.stock-icon3
+  display none
 @media (min-width: 576px)
   .container
     max-width: 540px;
@@ -864,6 +866,66 @@
     margin-bottom 10px
   .paketi-slider
     margin-bottom 23px
+  .stock-wrapper
+    display block
+    position fixed
+    bottom 78px
+    left 0
+    right 0
+    height 177px
+    background: linear-gradient(359.49deg, #FFFFFF -10.37%, #FB757D -10.36%, #FFFFFF 145.29%, #FFB0B0 145.29%);
+    z-index 50
+    border-radius 23px 23px 0px 0px
+  .stock-icon3
+    display block
+    transform: translate(36%, 16%);
+  .stock-icon2
+    display none
+  .stock-icon1
+    display none
+  .stock-close
+    position absolute
+    right 15px
+    top 15px
+    z-index 51
+  .stock-icon3
+    position absolute
+    right: 52px;
+    top: -19px;
+    .icon
+      size(146px,107px)
+  .stock-flex
+    display grid
+    grid-template-columns repeat(2, 1fr)
+    width 100%
+    gap 12px
+    margin-bottom 17px
+  .stock-text1
+    padding 14px
+    margin-left 0
+    height 28px
+    span
+      font-size 13px
+  .stock-container
+    flex-direction column
+  .stock-desc1
+    display block
+    font-size 13px
+  .stock-procent__wrap
+    span:nth-child(2)
+      display block
+      font-size 13px
+  .stock-button__wrap
+    width 100%
+    .stock-button
+      margin-right 0
+      height 40px
+  .stock-procent__wrap
+    span:nth-child(1)
+      font-size 18px
+  .stock-wrapper .container
+    padding: 20px 16px 0px 16px;
+
 
 @media screen and (max-width: 576px)
 
