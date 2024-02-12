@@ -2,6 +2,8 @@
   display flex
   gap 28px
 .article-main__sidebar
+  display flex
+  flex-direction column
   width 28.5%
 .article-main__content
   width 71.5%
@@ -169,9 +171,25 @@
   font-weight 400
   cursor pointer
 .article-widget__fixed
-  display: block;
-  position: sticky;
-  top: 120px;
+  height 100%
+  .article-mobile__widget
+    display: block;
+    position: sticky;
+    top: 120px;
+    margin-bottom 30px
+.article-content
+  .tar-left
+    width 100%
+    margin-right 0
+.article-main__sidebar
+  .article-content__widget
+    &:last-child
+      margin-bottom 0
+  .tar-right__rating
+    margin 0 auto
+  .tar-right__button
+    min-width 100%
+    font-weight 400
 
 
 
