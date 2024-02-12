@@ -22,6 +22,7 @@
   size(24px)
   position relative
   margin-right 8px
+  min-width 24px
 .radio-flex.active
   .radio
     border 2px solid #3D3C3C
@@ -56,6 +57,7 @@
 .popup.active
   opacity 1
   pointer-events auto
+  overflow-y scroll
   .popup__wrapper
     transform scale(1)
 .popup__wrapper
@@ -67,6 +69,7 @@
   max-width 720px
   margin 0 auto
   margin-top 30px
+  margin-bottom 30px
   transform scale(0)
   transition ease .3s
 .max-w-1336
@@ -108,6 +111,7 @@
     fill #3D3C3C
 .input-main__block
   position relative
+  margin-bottom 50px
   label
     display block
     font-size 24px
@@ -120,7 +124,7 @@
 .input-select__top
   display flex
 .input-select__list
-  position relative
+  position absolute
   display none
   background-color #f5f5f5
   width 100%
@@ -129,6 +133,7 @@
   overflow-y scroll
   height auto
   max-height 250px
+  z-index 2
   &::-webkit-scrollbar
     width 0
 .input-select__item
@@ -156,6 +161,11 @@
   transition ease .3s
   transform translateX(-100%)
   will-change transform
+.desctop-search
+  display none
+  transition ease .3s
+  transform translateX(-100%)
+  will-change transform
 .mobile-search
   position fixed
   left 0
@@ -166,7 +176,28 @@
   z-index 30
   flex-direction column
   padding 52px 15px 15px 15px
+.desctop-search
+  position fixed
+  left 0
+  right 0
+  bottom 0
+  top 0
+  background-color #fff
+  z-index 30
+  flex-direction column
+  padding 52px 15px 15px 15px
+  .mobile-search__close
+    position absolute
+    right 20px
+    top 39px
+  .mobile-input
+    border-radius 36px
+  .mobile-search__result
+    height: calc(100dvh - 182px);
 .mobile-search.active
+  display flex
+  transform translateX(0)
+.desctop-search.active
   display flex
   transform translateX(0)
 .mobile-search__close
@@ -272,7 +303,7 @@
 .mobile-menu__list
   display flex
   align-items center
-  justify-content space-between
+  justify-content space-around
 .mobile-menu__item
   display flex
   flex-direction column
@@ -304,7 +335,7 @@
   background-color #fff
   padding 13px 16px
   transition ease .3s
-  transform translateX(-100%);
+  transform translateY(100%);
   will-change transform
 .overflow-body-hidden
   overflow hidden
@@ -330,6 +361,9 @@
     text-align center
     a
       text-decoration underline !important
+.article-content
+  .article-mobile__widget
+    display none
 .article-mobile__title
   font-family 'Montserrat',sans-serif
   font-size 28px
@@ -516,6 +550,259 @@
   color #4B4848
   margin-bottom 23px
 
+.fixed-upper-button
+  position fixed
+  right 30px
+  bottom 30px
+  border-radius 11px
+  padding 10px 16px
+  height 50px
+  background-color #FFFFFF80
+  cursor pointer
+  z-index 25
+  .icon
+    size(32px)
+    fill #3D3C3C
+    margin-right 10px
+  span
+    font-family 'Montserrat',sans-serif
+    font-size 14px
+    color #3D3C3C
+.input-rarif__flex
+  display flex
+  align-items baseline
+  gap 28px
+  width 100%
+  justify-content space-between
+  .t-item__list
+    background-color #EEEEEE
+  .tarif-advantages__item
+    cursor pointer
+.t-item__top
+  display flex
+  justify-content space-between
+.tarif-input-check
+  border 1px solid transparent
+  width 100%
+.tarif-input-check.active
+  border 1px solid #E0202B47
+  .radio
+    &:before
+      content: '';
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #3d3c3c;
+      border-radius: 50%;
+.t-item__top-text
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  .t-item__tag
+     background-color #FFF1F1
+     color #FF757D
+.variants-pay
+  .tarif-advantages__item
+    background-color #EAEAEA
+    padding 16px 19px 23px 30px
+    .t-item__tag
+      background-color #fff
+      margin-left 0
+      padding 8px 24px
+.t-item__name-small
+  font-size 20px
+  color #000000
+  font-weight 600
+.t-item__mounths
+  display flex
+  align-items center
+  column-gap 18px
+  row-gap 10px
+  margin-top 16px
+.t-item__mounth
+  text-align center
+  background-color #fff
+  color #898787
+  font-family 'Montserrat',sans-serif
+  font-size 15px
+  padding 9px 18px
+  border-radius 17px
+.modal-stock-block
+  padding 27px 24px
+  background-color #F8F8F8
+  border-radius 23px
+  cursor pointer
+  margin-bottom 44px
+.m-stock__top
+  display flex
+  align-items center
+  margin-bottom 12px
+.m-stock__name
+  font-family 'Montserrat',sans-serif
+  font-size 32px
+  color #1D212C
+  margin-right 29px
+  font-weight 700
+.m-stock__desc
+  font-size 13px
+  color #E67A80
+  background-color #FFB5B530
+  border-radius 17px
+  height 32px
+  padding 8px 29px
+.m-stock__bottom
+  display flex
+  align-items center
+.m-stock__radio
+  font-size 18px
+.modal-stock-block.active
+  .radio
+    &:before
+      content: '';
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #3d3c3c;
+      border-radius: 50%;
+.m-price__company
+  display flex
+  align-items center
+.m-price__block
+  display flex
+  align-items center
+  background-color #EAEAEA
+  width 100%
+  padding 18px 31px
+  border-radius 21px
+  height 64px
+  margin-right 37px
+  .t-item__tag
+    color #FF6060
+    background-color #fff
+    padding 8px 35px
+    margin-bottom 0
+    margin-left 0
+.m-price__flex
+  display flex
+  align-items center
+.modal-price-block
+  padding 50px 0
+  border-top 1px solid #CBCBCB
+  border-bottom 1px solid #CBCBCB
+.m-price__now
+  font-size 28px
+  color #1A1A1A
+  font-style italic
+  font-family 'Montserrat',sans-serif
+  margin-right 40px
+  font-weight 700
+.m-price__old
+  font-size 24px
+  color #A0A0A0
+  font-style italic
+  font-family 'Montserrat',sans-serif
+  margin-right 40px
+  font-weight 700
+  text-decoration: line-through
+.m-price__button
+  min-width 382px
+  height 64px
+  font-weight 400
+.modal-confidence-block
+  display flex
+  flex-wrap wrap
+  column-gap 20px
+  row-gap 17px
+.m-confidence__item
+  display flex
+  align-items center
+  background-color #F2F2F2
+  border-radius 50px
+  padding 18px 25px
+  width max-content
+  .icon
+    size(34px)
+    margin-right 15px
+  span
+    font-size 18px
+.input-block__js.active
+  .input-value
+    border 1px solid #969696
+.max-w-450
+  max-width 450px
+  padding 42px 36px
+.popup-callback-block
+  .f-question__form
+    flex-direction column
+    .input-class
+      margin-right 0
+      background-color #F0F0F0
+      margin-bottom 20px
+    .button-2
+      width 100%
+  .f-question__attention
+    text-align center
+    color #9F9F9F
+    a
+      color #9F9F9F
+      text-decoration underline !important
+.p-share__social
+  display flex
+  align-content center
+  gap 15px
+  margin-bottom 20px
+.p-share__item
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #EDEDED;
+  width: 53px;
+  height: 53px;
+  padding: 5px;
+  margin-right: 10px;
+  cursor pointer
+  .icon
+    fill #fff
+    size(30px)
+  .dot-share
+    .icon
+      fill #1C274C
+.telegra-share
+  background-color #039BE5
+.vk-share
+  background-color #07689F
+.whatsapp-share
+  background-color #71BF44
+.p-share__copy
+  display flex
+  align-items center
+  justify-content space-between
+  border 1px dashed #C2C2C2
+  border-radius 17px
+  height 57px
+  padding 18px 20px
+  line-height 1
+  span
+    color #000000
+    font-weight 600
+    font-family 'Montserrat',sans-serif
+    font-size 20px
+    margin-right 15px
+  .icon
+    size(31px)
+    fill #1C274C
+.p-share__title
+  font-family 'Montserrat',sans-serif
+  font-size 20px
+  font-weight 600
+  margin-bottom 20px
 
 
 

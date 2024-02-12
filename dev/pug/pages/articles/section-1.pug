@@ -4,10 +4,12 @@ section.blog
             h2.sub-title Блог компании Повесток.Нет
             .blog-container
                 .blog-search
-                    .b-search__input
-                        input(type="text" placeholder="Поиск статьи")
+                    .b-search__input.input-block__js
+                        input.input-value(type="text" placeholder="Поиск статьи")
                         .b-search__button
                             +icon('search')
+                        .b-delete__button
+                            +icon('close')
                 .blog-category
                     .b-categ__title Категории
                         span (0)
@@ -88,7 +90,7 @@ section.blog
                     .b-articles__title Статей:
                         span 88
                     .b-articles__list
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -104,7 +106,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -120,7 +122,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -136,7 +138,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -152,7 +154,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -168,7 +170,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -184,7 +186,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -200,7 +202,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -216,7 +218,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -232,7 +234,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -248,7 +250,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама
@@ -264,7 +266,7 @@ section.blog
                                 .b-articles__info
                                     +icon2('calendar-2')
                                     span 02.10.2023
-                        .b-articles__item
+                        a.b-articles__item(href="/")
                             .b-articles__author
                                 img.b-articles__logo(src="/static/img/general/profile.png" alt="Картинка")
                                 .b-articles__name Фенис Карама

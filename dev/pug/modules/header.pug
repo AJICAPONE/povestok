@@ -7,6 +7,18 @@ header
                         +icon('location')
                         span Москва
                         +icon('arrow-down')
+                    .h-top-left__loc-menu
+                        .h-tllm__select
+                            span Выберите город
+                            +icon('arrow-down')
+                        .h-top-left__loc-list
+                            .h-tllm__item Абакан
+                            .h-tllm__item Омск
+                            .h-tllm__item Санкт-Питербург
+                            .h-tllm__item Абакан
+                            .h-tllm__item Омск
+                            .h-tllm__item Санкт-Питербург
+
                     .h-top-left__consulting
                         .consulting-count 1196
                         .consulting-text проведенных консультаций
@@ -23,7 +35,6 @@ header
             .header-bottom__container
                 .header-bottom__contacts
                     a.h-logo(href="/")
-                        +icon2('logo')
                         +icon2('logo2')
                     .h-contacts
                         a.h-phone(href='tel:88006003158')
@@ -48,12 +59,25 @@ header
                         .h-navbar
                             nav.h-menu
                                 ul.h-menu__list
+                                    li.h-menu__item.h-menu__item-depth1
+                                        .h-item__link(href="/") услуги
+                                        .h-menu__item-depth2__wrap
+                                            .h-menu__item-depth2
+                                                a.h-item__item-depth2(href="/") Призывникам
+                                                a.h-item__item-depth2(href="/") Военнослужащим
+                                                a.h-item__item-depth2(href="/") Акции
                                     li.h-menu__item
-                                        a.h-item__link(href="/") услуги
-                                    li.h-menu__item
-                                        a.h-item__link(href="/") практика
-                                    li.h-menu__item
-                                        a.h-item__link(href="/") база знаний
+                                        .h-item__link практика
+                                    li.h-menu__item.h-menu__item-depth1
+                                        .h-item__link база знаний
+                                        .h-menu__item-depth2__wrap
+                                            .h-menu__item-depth2
+                                                a.h-item__item-depth2(href="/") Статьи
+                                                a.h-item__item-depth2(href="/") ОНлайн-Консультация
+                                                a.h-item__item-depth2(href="/") Закон о воинской обязанности
+                                                a.h-item__item-depth2(href="/") Расписание болезней
+                                                a.h-item__item-depth2(href="/") Видео
+                                                a.h-item__item-depth2(href="/") Тест на годность
                                     li.h-menu__item
                                         a.h-item__link(href="/") о компании
                                     li.h-menu__item
@@ -62,10 +86,63 @@ header
                                         a.h-item__link(href="/") контакты
                             .h-search
                                 +icon('search')
-                        .h-callback
+                        .h-callback(data-cus-target="popup-callback")
                             +icon('callback')
                             span Заказать звонок
 
-
+    .header-bottom__contacts-fixed
+        .container
+            .header-bottom__contacts
+                a.h-logo(href="/")
+                    +icon2('logo2')
+                .h-contacts
+                    a.h-phone(href='tel:88006003158')
+                        .h-phone__text 8-800-600-31-58
+                        span Бесплатная консультация
+                    .h-social__block
+                        .h-social__links
+                            a.h-social__link.h-telegram(href="")
+                                +icon('telegram')
+                            a.h-social__link.h-whatsapp(href="")
+                                +icon('whatsapp')
+                            a.h-social__link.h-vk(href="")
+                                +icon('vk   ')
+                        span Напишите нам
+                .h-mobile__contacts
+                    a.h-mobile__phone(href="tel:88006003158")
+                        +icon2('call')
+                    .h-mobile__search.search-button
+                        +icon('search')
+    .header-nav-menu__bar
+        .container
+            .h-nav__rating
+                .h-nav__rating-item
+                    .h-nav__item-top
+                        +icon2('yandex')
+                        .h-nav__item-count
+                            +icon('star2')
+                            span 5.0
+                    .h-nav__item-bottom 50+ отзывов
+                .h-nav__rating-item
+                    .h-nav__item-top
+                        +icon2('yell')
+                        .h-nav__item-count
+                            +icon('star2')
+                            span 5.0
+                    .h-nav__item-bottom 50+ отзывов
+                .h-nav__rating-item
+                    .h-nav__item-top
+                        +icon2('spr')
+                        .h-nav__item-count
+                            +icon('star2')
+                            span 5.0
+                    .h-nav__item-bottom 50+ отзывов
+                .h-nav__rating-item
+                    .h-nav__item-top
+                        +icon2('gis')
+                        .h-nav__item-count
+                            +icon('star2')
+                            span 5.0
+                    .h-nav__item-bottom 50+ отзывов
 
 

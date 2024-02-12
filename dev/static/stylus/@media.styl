@@ -54,6 +54,20 @@
         display none
   .stock-icon2
     transform: translateX(404%);
+  .popup__wrapper
+    max-width 1150px
+  .input-rarif__flex
+    flex-wrap wrap
+    .tarif-advantages__item
+      width 48%
+  .m-price__now
+    margin-right 20px
+  .m-price__old
+    margin-right 0
+  .max-w-450
+    max-width 404px
+  ul.h-menu__list li a, ul.h-menu__list li .h-item__link
+    font-size 13px
 
 
 @media (max-width: 1199px)
@@ -123,6 +137,15 @@
     display none
   .stock-icon2
     transform: translateX(298%);
+  .popup__wrapper
+    max-width 940px
+  .m-price__company
+    flex-direction column
+  .m-price__block
+    margin-right 0
+    margin-bottom 20px
+  .max-w-450
+    max-width 404px
 @media screen and (max-width: 992px)
   .header-top
     display none
@@ -286,6 +309,19 @@
     padding 10px
   .paketi-flex .sub-title__desc-mobile
     padding-right 10%
+  .popup__wrapper
+    max-width 710px
+    padding 30px
+  .input-rarif__flex
+    .tarif-advantages__item
+      width 100%
+  .min-w-50
+    width 100%
+  .max-w-450
+    max-width 404px
+  .header-nav-menu__bar
+    top: 143px;
+
 @media screen and (max-width: 768px)
   .header-bottom__menu
     display none
@@ -553,7 +589,7 @@
     display block
     padding-top 70px
   .menu-tab.active
-    transform translateX(0)
+    transform translateY(0)
   .menu-tab__close
     position absolute
     top 41px
@@ -590,6 +626,8 @@
       font-weight 700
       color #1D212C
       text-transform uppercase
+      word-break break-all
+      padding-right 25px
   .menu-item__icon
     display flex
     justify-content center
@@ -609,7 +647,7 @@
     padding-right 32px
   .menu-tab__list
     overflow-y scroll
-    height: calc(100dvh - 220px);
+    height: calc(100dvh - 191px);
     padding-bottom 30px
     &::-webkit-scrollbar
       width 0
@@ -927,7 +965,37 @@
     padding: 20px 16px 0px 16px;
   .tarif-advantages
     margin-bottom 23px
-
+  .m-price__flex
+    flex-direction column
+    align-items end
+    .m-price__old
+      font-size 15px
+    .m-price__now
+      font-size 25px
+      margin-right 0
+  .m-stock__bottom
+    align-items start
+  .popup__wrapper
+    max-width 540px
+  .popup-content
+    .sub-title
+      font-size 24px
+  .input-main__block label
+    margin-bottom 18px
+    font-weight 600
+  .popup-close
+    right 0
+    top -80px
+  .popup__wrapper
+    margin-top 100px
+  .m-confidence__item
+    width 100%
+  .menu-tab
+    padding-top: 42px;
+  .f-question__attention
+    font-size 12px
+  .max-w-450
+    max-width 404px
 
 @media screen and (max-width: 576px)
 
@@ -995,8 +1063,39 @@
   .packages__articles
     .see-article
       padding: 20px 10px;
-
-
+  .popup__wrapper
+    max-width 90%
+    padding 17px
+    .tarif-advantages__item
+      max-width 100%
+      padding: 18px 8px 8px 8px;
+    .t-item__tag
+      font-size 12px
+      margin-right 0
+      margin-left 0
+  .popup-close
+    size(52px)
+  .m-stock__radio
+    font-size 16px
+  .m-stock__name
+    font-size 18px
+    margin-right 15px
+  .m-price__block
+    flex-direction column
+    height auto
+    .t-item__tag
+      margin-bottom 10px
+  .m-price__flex
+    display flex
+    align-items center
+  .m-confidence__item
+    padding 15px
+    .icon
+      min-width 34px
+    span
+      font-size 12px
+  .article-share
+    top 53%
 
 
 
