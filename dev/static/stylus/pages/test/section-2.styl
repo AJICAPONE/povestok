@@ -1,0 +1,342 @@
+.test-app__wrapper
+  display flex
+  align-items center
+  background-color #e7e7e7
+  border-radius 23px
+  position relative
+  min-height 435px
+  height 100%
+  transition ease .3s
+.test-app__ajax
+  display flex
+  align-items center
+  //position relative
+  height 100%
+  width 100%
+  //padding 125px 90px
+.test-app__left
+  padding: 35px;
+  .sub-title
+    font-size 32px
+    white-space pre
+  .sub-title__desc
+    font-size 15px
+    margin-bottom 20px
+.test-app__left,.test-app__right
+  width 48%
+  .button-2
+    width 100%
+    font-weight 400
+.test-app__right
+  position: absolute;
+  width: 35%;
+  bottom: 0;
+  right: 72px;
+.test-app__radios
+  display grid
+  grid-template-columns repeat(2, 1fr)
+  justify-content space-between
+  row-gap 16px
+  margin-bottom 34px
+  .radio-flex span
+    white-space pre
+.test-app__buttons
+  display flex
+  align-items center
+.test-back
+  display flex
+  align-items center
+  justify-content center
+  border: 2px solid #1C274C;
+  height: 52px;
+  cursor pointer
+  border-radius 15px
+  min-width 162px
+  margin-right 22px
+  padding 20px
+  transition ease .2s
+  .icon
+    size(20px)
+    fill #1C274C
+    transition ease .2s
+  &:hover
+    border 2px solid #e0202b
+    .icon
+      fill #e0202b
+.test-app__left-progress
+  display flex
+  height 12px
+  width 100%
+  background-color #fff
+  border-radius 16px
+  margin-bottom 16px
+  position relative
+  &:before
+    content ''
+    width 0%
+    height 12px
+    background-color #e0202b
+    border-radius 15px
+    display block
+.test-progress-11
+  &:before
+    width 11%
+.test-progress-22
+  &:before
+    width 22%
+.test-progress-33
+  &:before
+    width 33%
+.test-progress-44
+  &:before
+    width 44%
+.test-progress-55
+  &:before
+    width 55%
+.test-progress-66
+  &:before
+    width 66%
+.test-progress-77
+  &:before
+    width 77%
+.test-progress-88
+  &:before
+    width 88%
+.test-app__progress-complete
+  display flex
+  align-items center
+  font-family 'Montserrat',sans-serif
+  font-size 16px
+  color #939393
+  font-weight 500
+  margin-bottom 37px
+.progress-procent
+  color #343434
+  margin-left 12px
+  display flex
+  font-weight 600
+.test-check-pictures
+  display grid
+  grid-template-columns repeat(2,1fr)
+  gap 24px
+  margin-bottom 25px
+.test-check__picture
+  display flex
+  flex-direction column
+  border-radius 10px
+  padding 5px
+  border 1px solid transparent
+  cursor pointer
+  img
+    width 100%
+    height 100%
+    max-height 100px
+    object-fit cover
+    border-radius 10px
+    margin-bottom 5px
+  span
+    font-family 'Montserrat',sans-serif
+    font-size 15px
+    color #000
+.test-check__picture.active
+  border 1px solid #343434B5
+.test-check__yesno
+  display grid
+  grid-template-columns repeat(2,1fr)
+  gap 20px
+  margin-bottom 35px
+.test-check__button
+  display flex
+  align-items center
+  padding 17px
+  border 1px solid #00000047
+  border-radius 14px
+  cursor pointer
+  span
+    font-size 16px
+    font-family 'Montserrat',sans-serif
+.test-check__button.active
+  border 1px solid #e0202b
+.test-check__icon
+  display flex
+  justify-content center
+  align-items center
+  size(43px)
+  background-color #e0202b
+  border-radius 50%
+  margin-right 20px
+  .icon
+    fill #fff
+    size(21px)
+.pb-7
+  padding-bottom 7px
+.width-100
+  width 100%
+  padding-right 90px
+.width-48
+  width 48%
+.test-categ__tags
+  margin-bottom 52px
+  .b-categ__item
+    border-radius 52px
+  .b-categ__item.active
+    font-weight 400
+    background-color #3D3C3C
+    border 1px solid #3D3C3C
+  .b-categ__icon
+    background-color #fff
+    border-radius 50%
+    //margin -2px
+    .icon
+      fill #8B8A8A
+.test-more__content
+  display flex
+  align-items center
+.tab-jcsb
+  justify-content space-between
+  .button-2
+    min-width 350px
+.test-tag__choisen
+  font-family 'Montserrat',sans-serif
+  font-size 18px
+.grid-column-3
+  grid-template-columns repeat(3,1fr)
+.test-app__inputs
+  display grid
+  grid-template-columns repeat(2,1fr)
+  justify-content space-between
+  gap 20px
+  margin-bottom 20px
+  input
+    background-color: #fff;
+    border: none;
+    border-radius: 13px;
+    height: 52px;
+    width: 100%;
+    padding: 20px;
+    font-family 'Montserrat',sans-serif
+    font-size 16px
+    color #000
+    font-weight 500
+    &::placeholder
+      color #C0C0C0
+.test-app-input__desc
+  font-family 'Montserrat',sans-serif
+  font-size 12px
+  color #535353
+  margin-bottom 30px
+.width-80
+  width 80%
+.test-app__date
+  padding 6px 16px
+  height 34px
+  background-color #fff
+  border-radius 44px
+  font-size 18px
+  color #6B6B6B
+  width max-content
+  margin-bottom 37px
+.result-test
+  width 100%
+  .sub-title
+    padding-bottom 15px
+  .sub-title__desc
+    color #1C1C1C
+    font-size 18px
+
+.test-over__title
+  font-family 'Montserrat',sans-serif
+  font-size 24px
+  color #000
+  font-weight 600
+  margin-bottom 15px
+.test-over__res
+  display flex
+  justify-content center
+  flex-direction column
+  align-items center
+  background-color #D2D2D2
+  border-radius 20px
+  padding 80px 35px
+.test-over__res-title
+  font-family 'Montserrat',sans-serif
+  font-size 28px
+  font-weight 600
+  margin-bottom 10px
+  text-align center
+.test-over__category
+  font-weight 700
+  font-family 'Montserrat',sans-serif
+  font-size 60px
+.test-app__over-wrapper
+  display flex
+  justify-content space-between
+  align-items center
+.test-over__buttons
+  display flex
+  column-gap 30px
+  row-gap 20px
+  margin-bottom 70px
+.test-over__copy,.test-over__share
+  display flex
+  align-items center
+  justify-content space-between
+  border 1px dashed #C2C2C2
+  border-radius 17px
+  height 54px
+  font-family 'Montserrat',sans-serif
+  font-size 14px
+  font-weight 500
+  width max-content
+  padding 16px
+  cursor pointer
+  min-width 226px
+  span
+    margin-right 10px
+  .icon
+    size(26px)
+    fill #000
+.test-app__result-block
+  display flex
+  justify-content space-between
+  align-items center
+  column-gap 60px
+.recommend-test__articles
+  display grid
+  grid-template-columns repeat(3,1fr)
+  gap 30px
+.recommend-test__article
+  display flex
+  flex-direction column
+  padding 30px 20px
+  border-radius 16px
+  background-color #ECECEC
+.recommend-test__article-top
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 16px
+  .icon
+    size(19px)
+    fill #252525
+.recommend-test__tab
+  display flex
+  align-items center
+  padding 5px 28px
+  height 38px
+  font-family 'Montserrat',sans-serif
+  font-size 16px
+  color #252525
+  width max-content
+  border 1px solid #252525
+  border-radius 16px
+.recommend-test__article-title
+  font-family 'Montserrat',sans-serif
+  font-weight 700
+  font-size 24px
+  color #1F1F1F
+  margin-bottom 16px
+  text-transform uppercase
+.recommend-test__article-desc
+  font-size 16px
+  color #6B6B6B

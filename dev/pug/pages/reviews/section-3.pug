@@ -1,0 +1,23 @@
+section.review-sec
+    .container
+        .review-grid
+            - for (var i = 1; i <= 10; i++)
+                .reviews-slider__card
+                    img.reviews-card__img(src="/static/img/content/review/img1.png" alt="Картинка")
+                    .review-card__user
+                        a.review-card__social(href="/")
+                            img(src="/static/img/general/vk.png" alt="Картинка")
+                        .review-card__person
+                            .review-person__name Андрей Жуков
+                            .reveiw-person__city Череповец
+                    .review-card__text Спасибо компании за поддержку и помощь. Рад, что не ошибся с выбором, ведь для меня в 20 лет заплатить сумму в 50000 рублей было не так просто, я очень напрягался на положительный результат. Теперь я двигаюсь вместе с вами, был клиентом, стал сотрудником компании, чему так же очень рад. Вместе мы поможем многим призывникам!
+        .review-nav-bar
+            .review-arrow-left
+                +icon('left-arrow')
+            .review-nav-counts
+                .review-nav-count.active 1
+                .review-nav-count 2
+                .review-nav-count 3
+            .review-arrow-right
+                +icon('right-arrow')
+        .button-3.min-w-429.review-load-more Загрузить еще

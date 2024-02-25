@@ -1,0 +1,38 @@
+section.questions-themes
+    .container
+        .themes-wrapper
+            .blog-search
+                .b-search__input.input-block__js
+                    input.input-value(type="text" placeholder="Поиск статьи")
+                    .b-search__button
+                        +icon('search')
+                    .b-delete__button
+                        +icon('close')
+            .themes-container
+                h2.sub-title Темы
+                .themes-tabs
+                    .themes-tab ВСЕ
+                    .themes-tab военный билет
+                    .themes-tab призыв в армию
+                    .themes-tab отсрочка от армии
+                    .themes-tab отношения с военкоматом
+                    .themes-tab освобождение от призыва
+                    .themes-tab Комиссация из армии
+                .themes-question__list
+                    - for (var i = 1; i <= 5; i++)
+                        .themes-question__item
+                            .themes-item__top
+                                .themes-item__title Марина, 22 часа назад
+                                .themes-item__desc Мой муж мобилизован. Из-за семейных проблем у нас накопились долги по коммунальным платежам. Понимаю, что нужно платить, но сумма за годы накопилась значительная, а тут еще постоянные текущие платежи. Что посоветуете?...
+                            .themes-item__bottom
+                                .themes-item__profile
+                                    img(src="/static/img/general/profile.png" alt="Картинка")
+                                    .themes-profile__info
+                                        .themes-info__name Элина Камал
+                                        .themes-info__job юрист
+                                .themes-item__desc Здравствуйте. Алевтина, правительство всячески помогает семьям мобилизованных, в том числе с прошлого года отменили начисление пеней и штрафов за несвоевременную оплату коммунальных услуг. В некоторых...
+                                .themes-item__tabs
+                                    .themes-item__tab военный билет
+                                    .themes-item__tab отсрочка от армии
+                                    .themes-item__tab освобождение от призыва
+                .button-3.min-w-429.themes-load-more Загрузить еще

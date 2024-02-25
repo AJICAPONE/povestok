@@ -1,0 +1,168 @@
+.rule-time__tag
+  display flex
+  align-items center
+  justify-content center
+  background-color #dfdfdf
+  font-size 16px
+  border-radius 23px
+  padding 9px 20px
+  width max-content
+  height 36px
+  margin-bottom 30px
+.rule-time__wrapper
+  .sub-title__desc
+    margin-bottom 20px
+    padding-right 40%
+.rule-time
+  padding-top 0
+.rule-time__container
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+.rule-time__left
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: #fff;
+  padding: 54px 45px;
+  border-radius: 23px;
+.rule-time__right
+  display flex
+  justify-content center
+  align-items center
+  width: 70%;
+  background-color: #fff;
+  padding: 54px 45px;
+  border-radius: 23px;
+  blockquote
+    position relative
+    font-size 18px
+    color #000
+    &:before
+      content ''
+      background url(/static/img/general/quote-up.png)
+      background-position center
+      background-repeat no-repeat
+      background-size contain
+      size(50px)
+      position absolute
+      left: -3px;
+      top: -58px;
+    &:after
+      content ''
+      background url(/static/img/general/quote-up.png)
+      background-position center
+      background-repeat no-repeat
+      background-size contain
+      size(50px)
+      position absolute
+      right -3px
+      bottom: -58px;
+      transform rotate(180deg)
+.rule-content__wrapper
+  background-color #fff
+  padding 60px 64px
+  border-radius 23px
+  .b-search__input
+    input
+      background-color #EAEAEA
+.rule-content__top
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+.rule-content__top-l
+  display flex
+  align-items center
+.rule-content__top-l__flex
+  display flex
+  align-items center
+.rule-content__item
+  display flex
+  flex-direction column
+  position relative
+  width 100%
+  align-items center
+  background-color #D9D9D9
+  border-radius 13px
+  padding 20px 50px
+  cursor pointer
+  margin-bottom 20px
+  &:last-child
+    margin-bottom 0
+.rule-content__icon
+  display flex
+  justify-content center
+  align-items center
+  size(35px)
+  border-radius 50%
+  background-color #8E8F90
+  .icon
+    size(17px)
+    fill #fff
+  .icon-minus
+    display none
+.rule-content__name
+  font-size 24px
+  color #404040
+  font-weight 800
+  font-family 'Montserrat',sans-serif
+  font-style italic
+  margin-right 50px
+.rule-content__article
+  display flex
+  align-items center
+  justify-content center
+  background-color #BFBFBF
+  font-size 16px
+  border-radius 23px
+  padding 9px 20px
+  width max-content
+  height 36px
+  margin-right 50px
+.rule-content__desc
+  font-size 18px
+  color #0F0F0F
+.rule-content__bottom-block
+  display none
+.rule-content__bottom-item
+  display flex
+  align-items center
+  background-color #BABABA
+  border-radius 23px
+  padding 20px 30px 20px 44px
+  margin-bottom 12px
+  &:last-child
+    margin-bottom 0
+.rule-content__bottom
+  display none
+  padding-top 30px
+  margin-top: 30px;
+  border-top: 1px solid #BBBBBB;
+.rule-content__bottom-l
+  display flex
+  align-items center
+.rule-content__bottom-name
+  font-family 'Montserrat',sans-serif
+  font-size 20px
+  font-weight 700
+  color #3D3C3C
+  margin-right 60px
+  white-space nowrap
+.rule-content__bottom-desc
+  font-size 16px
+  padding-right 5%
+  color #3D3C3C
+.rule-content__bottom-icon
+  .icon
+    fill transparent
+    stroke #8C8C8C
+    stroke-linecap round
+    size(18px)
+.rule-content__item.active
+  .rule-content__icon
+    .icon-plus
+      display none
+    .icon-minus
+      display block

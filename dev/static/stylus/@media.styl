@@ -68,7 +68,47 @@
     max-width 404px
   ul.h-menu__list li a, ul.h-menu__list li .h-item__link
     font-size 13px
-
+  .review-grid
+    grid-template-columns repeat(3,1fr)
+  .contacts-title
+    font-size 16px
+  .contacts-desc
+    font-size 13px
+  .contacts-grid
+    grid-template-columns repeat(3,1fr)
+  .contacts-block
+    &:nth-child(1)
+      grid-area: 1 / 1 / 2 / 2;
+    &:nth-child(2)
+      grid-area: 1 / 2 / 2 / 3;
+    &:nth-child(3)
+      grid-area: 1 / 3 / 2 / 4;
+    &:nth-child(4)
+      grid-area: 2 / 1 / 3 / 4;
+  .social-block
+    flex-direction column
+  .social-block__left
+    width 80%
+    margin-bottom 20px
+  .social-block__right
+    width 100%
+  .team-chosen__employer
+    padding 30px
+  .employer-left
+    .button-2
+      width 100%
+      white-space nowrap
+  //.video-employer__link
+  //  font-size 14px
+  .video-employer__title
+    margin-bottom 15px
+  .video-employer__top
+    flex-direction column
+    align-items start
+  .rule-fullwidth__left
+    width 35%
+  .rule-fullwidth__right
+    width 65%
 
 @media (max-width: 1199px)
   .tarif-slider__card
@@ -146,6 +186,124 @@
     margin-bottom 20px
   .max-w-450
     max-width 404px
+  .h-nav__rating
+    display none
+  .test-app__right
+    display none
+  .test-app__left,.test-app__right
+    width 100%
+  .test-app__left .sub-title
+    white-space normal
+  .test-app__left
+    .width-48
+      width 100%
+    .width-80
+      width 100%
+  .width-100
+    padding-right 35px
+  .recommend-test__articles
+    grid-template-columns repeat(2,1fr)
+  .tab-jcsb
+    flex-direction column
+    justify-content start
+    align-items start
+    .test-tag__choisen
+      margin-bottom 10px
+
+  .form-question__comment
+    .form-question__container
+      width 100% !important
+  .team-employer__name
+    font-size 22px
+  .team-employer__job
+    font-size 15px
+  .team-employer__city
+    .icon
+      size(23px)
+    span
+      font-size 15px
+  .team-chosen__employer img
+    margin-bottom 20px
+  .employer-left
+    height max-content
+  .employer-left
+    .button-2
+      font-size 13px
+    .button-whatsapp
+      span
+        font-size 13px
+        white-space nowrap
+  .employer-right
+    padding 25px
+  .video-employer__list .swiper-wrapper
+    gap 0
+  .video-employer
+    overflow hidden
+  .video-employer__top
+    flex-direction row
+    align-items center
+  .video-employer__title
+    margin-bottom 0px
+  .video-employer
+    .button-3
+      display flex
+  .video-employer__list
+    margin-bottom 35px
+  .job-over .s-review__title
+    width 100%
+  .m-menu__item
+    font-size 16px
+  .rule-content__top-l
+    flex-direction column
+    align-items start
+  .rule-content__top-l__flex
+    margin-bottom 6px
+  .rule-content__top
+    align-items start
+  .rule-fullwidht__item
+    flex-direction column
+  .rule-fullwidth__left
+    width 100%;
+  .rule-fullwidth__right
+    width 100%
+  .rule-section__left
+    width 35%
+  .rule-section__right
+    width 65%
+  .sto-img
+    height calc(100vh - 90px)
+    object-fit contain
+  .videos .video-employer__list
+    grid-template-columns repeat(2,1fr)
+  .about-title
+    font-size 30px
+  .about-desc
+    font-size 18px
+  .about-data__container
+    flex-direction column-reverse
+    justify-content center
+  .about-basics__list .swiper-wrapper
+    grid-template-columns repeat(2,1fr)
+  .about-data__container
+    padding 20px
+  .about-container__left
+    margin-right 0
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+  .about-data__container img
+    margin 0 auto
+  .about-container__text
+    text-align center
+  .about-data__wrapper
+    flex-direction column
+  .about-data__left
+    width 100%
+  .about-data__right
+    width 100%
+  .about-data__sticky
+    margin-bottom 20px
 @media screen and (max-width: 992px)
   .header-top
     display none
@@ -259,14 +417,20 @@
     padding 33px 16px
   .article-info
     padding-right 0
-    margin-bottom 93px
+    margin-bottom 20px
   .article-icon
     padding-right 0
     margin 0 auto
+    order 3
   .article-share
-    transform translate(-50%,-50%)
-    left: 50%;
-    top: 52%;
+    position relative
+    margin 0 auto
+    order 2
+    top auto
+    margin-bottom 32px
+    //transform translate(-50%,-50%)
+    //left: 50%;
+    //top: 52%;
     right auto
   .article-main__wrapper
     flex-direction column
@@ -321,6 +485,106 @@
     max-width 404px
   .header-nav-menu__bar
     top: 143px;
+  .review-grid
+    grid-template-columns repeat(2,1fr)
+  .reviews-section .sub-title__desc
+    padding-right 0
+  .test-app__result-block
+    flex-direction column
+  .test-app__result-right
+    width 100%
+    margin-bottom 20px
+  .test-over__buttons
+    margin-bottom 30px
+  .recommend-test__article-title
+    font-size 18px
+  .recommend-test__article-desc
+    font-size 13px
+  .recommend-test__tab
+    height 27px
+    font-size 13px
+  .recommend-test__article
+    padding 20px
+  .form-question__comment
+    .input-class
+      margin-right 0
+      margin-bottom 15px
+    .f-question__form
+      flex-direction column
+  .team-chosen__container
+    grid-template-columns repeat(2,1fr)
+  .team-wrapper .sub-title__desc
+    width 100%
+  .team-choise__city
+    width 100%
+  .team-choise__chosen
+    margin-bottom 20px
+  .employer-block
+    flex-direction column
+  .employer-left
+    width 100%
+    .button-2
+      font-size 15px
+    .button-whatsapp
+      span
+        font-size 15px
+  .employer-right
+    width 100%
+  .employer-info
+    padding 25px
+  .video-employer__title
+    font-size 12px
+  .video-employer__link
+    font-size 12px
+  .video-employer__desc
+    font-size 20px
+  .questions-consult
+    .index-wrapper
+      padding 30px
+  .rule-content__item
+    padding 20px
+  .rule-content__bottom-l
+    flex-direction column
+    align-items start
+  .rule-time__container
+    flex-direction column
+  .rule-time__left
+    width 100%
+  .rule-time__right
+    width 100%
+    padding 50px 20px
+  .rule-hub-content__section
+    flex-direction column
+  .rule-section__left
+    width 100%
+  .rule-section__right
+    width 100%
+  .std-rule-hub
+    padding-right 0
+  .rule-hub-content__fullwidth
+    padding 30px 20px
+  .stocks-list
+    grid-template-columns repeat(1,1fr)
+  .sto-img
+    margin-bottom 0
+  .error-articles
+    padding 0
+  .about-desc
+    padding-right 0
+    font-size 15px
+  .about-title
+    font-size 15px
+    font-weight 400
+    margin-right 0
+    line-height 1.2
+  .about-content__left
+    width 35%
+  .about-content__right
+    width 65%
+  .about-data__sticky
+    font-size 24px
+  .about-widget__desc
+    font-size 15px
 
 @media screen and (max-width: 768px)
   .header-bottom__menu
@@ -996,9 +1260,387 @@
     font-size 12px
   .max-w-450
     max-width 404px
-
+  .review-2-load
+    display flex
+  .themes-load-more
+    display flex
+  .review-grid
+    grid-template-columns repeat(1,1fr)
+  .review-sec
+    .reviews-slider__card
+      max-width 100%
+      height max-content
+    .reviews-card__img
+      height 50%
+      object-fit cover
+  .rating-site .site-reviews__wrapper
+    padding 40px 20px
+  .review-load-more
+    display flex
+  .review-nav-bar
+    display none
+  .review-grid
+    margin-bottom 30px
+  .rating-site .s-review__title
+    font-size 20px
+  .s-block__link
+    padding 13px
+  .social-block__left
+    width 100%
+  .contacts-grid
+    grid-template-columns repeat(1,1fr)
+  .contacts-block
+    padding 25px 30px
+    &:nth-child(1)
+      grid-area: 1 / 1 / 2 / 2;
+    &:nth-child(2)
+      grid-area: 2 / 1 / 3 / 2;
+    &:nth-child(3)
+      grid-area: 3 / 1 / 4 / 2;
+    &:nth-child(4)
+      grid-area: 4 / 1 / 5 / 2;
+  .social-info,.contacts-info
+    .sub-title
+      font-size 28px
+    .sub-title__desc
+      font-size 15px
+  .contacts-icon .icon
+    size(50px)
+  .contacts-title
+    font-size 20px
+  .test-app__right
+    display block
+    position relative
+    right 0
+    height 250px
+    object-fit contain
+  .test-app__ajax
+    flex-direction column
+  .test-app__left
+    .sub-title-2
+      text-align center
+      font-size 28px
+    .button-2
+      min-width auto
+  .test-online
+    .sub-title
+      font-size 28px
+    .sub-title__desc
+      font-size 15px
+    .sub-title__block
+      font-size 28px
+  .test-back
+    min-width 67px
+  .test-app__wrapper.active
+    position fixed
+    top 0
+    right 0
+    left 0
+    bottom 0
+    z-index 101
+    min-height auto
+    border-radius 0
+    .test-app__right
+      height 50%
+    .test-app__left
+      .sub-title
+        font-size 22px
+    .test-more__content
+      width 100%
+    .test-app__ajax
+      justify-content space-between
+    .test-app__radios
+      grid-template-columns repeat(1,1fr)
+  .test-app__result-right
+    width 100%
+  //.test-app__result-block
+  //  padding 28px
+  //.test-app__recommend-block
+  //  padding 20px
+  .test-app__over-wrapper
+    .sub-title
+      font-size 28px
+    .sub-title__desc
+      font-size 15px
+  .test-app__left
+    padding 16px
+  .test-app__date
+    font-size 15px
+    height auto
+    margin-bottom 28px
+  .recommend-test__articles
+    grid-template-columns repeat(1,1fr)
+  .test-over__copy,.test-over__share
+    min-width auto
+  .test-categ__tags
+    max-height 300px
+    overflow-y scroll
+  .team-choise__text
+    font-size 15px
+  .team
+    .sub-title
+      font-size 28px
+    .sub-title__desc
+      font-size 15px
+  .team-chosen__employer
+    padding 20px
+  .team-employer__name
+    font-size 18px
+    text-align center
+  .team-employer__job
+    font-size 14px
+    margin-bottom 0
+    text-align center
+  .team-employer__city
+    display none
+  .team-chosen__employer img
+    max-width 180px
+  .team-chosen__city span
+    font-size 12px
+  .video-mobile__title
+    display block
+  .video-employer__title
+    font-size 14px
+  .employer-right
+    .sub-title-2
+      display none
+    .sub-title__desc
+      font-size 15px
+    .sub-title-4
+      font-size 20px
+  .employer-sert__pictures
+    gap 9px
+  .employer-sert__picture
+    height 90px
+    img
+      min-width: 90px;
+      max-width: 90px;
+      max-height: 90px;
+  .employer-info
+    .sub-title-4
+      font-size 20px
+    .sub-title__desc
+      font-size 15px
+  .reviews-employer
+    .b-articles__subtitle
+      font-size 24px
+  .reviews-employer .slider-container .b-articles__title
+    width 100%
+    justify-content space-between
+  .reviews-employer
+    .b-articles__title
+      span
+        font-size 22px
+        font-weight 400
+    .sub-title__desc-mobile
+      display none
+  .employer-practice .b-articles__subtitle
+    width 100%
+    justify-content space-between
+    font-size 24px
+  .employer-practice .b-articles__title span
+    font-size 22px
+    font-weight 400
+  .reviews-employer .employer-load-reviews
+    display flex
+  .employer-practice .employer-practice-load
+    display flex
+  .video-employer .b-articles__subtitle
+    font-size 24px
+  .video-employer .b-articles__title span
+    font-size 22px
+    font-weight 400
+  .questions-consult
+    .index-wrapper
+      padding 30px
+      .sub-title-2
+        font-size 24px
+      .sub-title__desc
+        padding-right 0
+  .themes-tabs
+    overflow-x scroll
+    flex-wrap nowrap
+  .themes-tab
+    white-space nowrap
+    font-size 12px
+  .questions-themes
+    overflow hidden
+  .themes-item__desc
+    font-size 16px
+  .themes-item__title
+    font-size 16px
+  .themes-item__top
+    padding 25px 20px
+  .themes-item__bottom
+    padding 20px
+  .themes-info__name
+    font-size 16px
+  .themes-info__job
+    font-size 14px
+  .themes-item__tabs
+    row-gap 7px
+    column-gap 7px
+  .themes-item__tab
+    height 26px
+    padding 10px
+  .themes-item__profile img
+    size(44px)
+    min-width 44px
+  .themes-container
+    .sub-title
+      font-size 20px
+      padding-bottom 24px
+  .question-single
+    .sub-title
+      font-size 28px
+  .question-single__icon .icon
+    size(41px)
+  .question-single__container .themes-item__top
+    padding 25px
+  .question-single__container .themes-item__bottom
+    padding 25px
+  .question-single__baner
+    display none
+  .themes-wrapper
+    .b-articles__subtitle
+      font-size 24px
+      display flex
+      justify-content space-between
+  .standart-wrapper
+    .sub-title
+      font-size 28px
+      text-align center
+  .standart-content
+    padding-right 0
+  .standart-content h3
+    font-size 20px
+  .congrat-wrapper .sub-title-3
+    font-size 22px
+  .congrat-desc
+    font-size 15px
+  .congrat-wrapper
+    padding 30px 20px
+    .icon
+      height 200px
+  .job-over
+    .site-reviews__wrapper
+      background-color transparent
+    .s-review__title
+      color #343434
+      font-size 20px
+  .see-also__partners .see-also__left .sub-title
+    font-size 20px
+  .job-over2__also-list
+    grid-template-columns repeat(1,1fr)
+  .job-over2__item--tag
+    padding 8px
+  .job-over2-see-also
+    .sub-title
+      font-size 20px
+  .rule-time__wrapper .sub-title__desc
+    padding-right 0
+    font-size 15px
+  .test-block .test-desc
+    width 100%
+  .rule-content__wrapper
+    padding 20px
+  .rule-content__desc
+    font-size 14px
+  .rule-content__name
+    font-size 18px
+    margin-right 12px
+  .rule-content__article
+    font-size 12px
+    height 22px
+    padding 10px
+  .rule-content__bottom-item
+    padding 16px
+  .rule-content__bottom-name
+    font-size 16px
+  .rule-content__bottom-desc
+    font-size 14px
+  .rule-time__right blockquote
+    font-size 15px
+  .rule-time__right blockquote:before
+    top -48px
+    size(35px)
+  .rule-time__right blockquote:after
+    size(35px)
+    bottom -48px
+  .rule-time__tag
+    font-size 14px
+  .rule-graf__desc
+    font-size 14px
+    padding 15px 16px
+  .rule-fullwidth__graf-item
+    flex-direction column
+  .rule-graf__name
+    font-size 14px
+    margin-bottom 12px
+  .rule-dropdown__title
+    font-size 20px
+  .rule-section__dropdown
+    padding 30px 16px
+  .rule-dropdown__item-title
+    font-size 16px
+  .rule-dropdown__item-desc
+    font-size 14px
+  .rule-section__right p
+    font-size 15px
+  .rule-hub-content__fullwidth
+    .sub-title-2
+      font-size 20px
+  .rule-fullwidth__left
+    font-size 16px
+  .rule-fullwidth__right-title
+    font-size 14px
+  .rule-section__widget
+    padding 20px
+  .rule-section__right ul li
+    font-size 15px
+  .rule-dropdown__icon
+    display none
+  .std-rule-hub
+    font-size 15px
+  .stocks-wrapper
+    .sub-title-3
+      font-size 24px
+  .confidence-desc2
+    font-size 15px
+  .question-video .question-video__left .sub-title-2
+    padding 0
+    line-height 1
+    margin-bottom 13px
+  .question-video .question-m-video__right
+    display flex
+  .videos .video-employer__list
+    grid-template-columns repeat(1,1fr)
+  .about-basics__list .swiper-wrapper
+    display flex
+    gap 0
+  .about-basics
+    overflow hidden
+  .about-content
+    flex-direction column-reverse
+  .about-content__left
+    width 100%
+  .about-content__right
+    width 100%
+  .about-content__right p
+    font-size 15px
+  .about-container__text
+    font-size 15px
+  .about-container__title
+    font-size 20px
+  .about-container__desc
+    font-size 15px
+  .about-data__container img
+    margin-bottom 13px
+  .about-data__right p
+    font-size 15px
+  .about-us__title
+    display none
 @media screen and (max-width: 576px)
-
   .together-list
     grid-template-columns: repeat(1, 1fr);
   .h-logo .icon-logo2
@@ -1096,9 +1738,77 @@
       font-size 12px
   .article-share
     top 53%
-
-
-
+  .rating-site .s-review__item
+    min-width 100%
+  .review-sec .reviews-card__img
+    height 286px
+  .s-block__links
+    grid-template-columns repeat(1,1fr)
+  .s-block__link
+    justify-content center
+  .test-over__buttons
+    flex-direction column
+  .test-over__copy,.test-over__share
+    width 100%
+  .test-over__category
+    font-size 85px
+  .test-over__res-title
+    font-size 18px
+  .test-over__res
+    padding 20px
+  .test-app__left
+    .sub-title-2
+      font-size 22px
+  .test-app__radios
+    row-gap 0
+  .test-app__inputs,.test-check-pictures,.test-check__yesno
+    grid-template-columns repeat(1,1fr)
+    max-height 300px
+    overflow-y scroll
+  .team-chosen__container
+    gap 17px
+  .team-chosen__employer
+    border-radius 14px
+  .video-employer__title
+    font-size 13px
+  .job-over
+    .s-review__list
+      display grid
+      grid-template-columns repeat(2,1fr)
+      gap 10px
+  .congrat-wrapper .icon
+    width auto
+  .rule-time
+    .rule-time__left
+      padding 20px
+  .rule-time__right blockquote
+    margin 15px 0
+  .test-wrapper
+    .sub-title-3
+      font-size 24px
+    .test-desc
+      font-size 14px
+  .rule-fullwidth__graf-list
+    gap 10px
+  .sto-img
+    height 100%
+    margin-bottom 20px
+  .sto-wrapper
+    .sub-title__desc
+      font-size 16px
+  .stocks-tag span
+    font-size 16px
+  .stocks-time
+    font-size 13px
+  .sto-desc
+    font-size 15px
+    width 100%
+    padding 0
+  .error-404-text
+    font-size 130px
+  .error-desc
+    text-align center
+    font-size 24px
 
 
 

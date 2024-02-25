@@ -1,0 +1,18 @@
+section.video-employer.videos
+    .container
+        .slider-container
+            .b-articles__title
+                .b-articles__subtitle Видео
+        .video-employer__list
+            - for (var i = 1; i <= 9; i++)
+                .video-employer__item
+                    iframe(#ytplayer type="text/html"
+                        src="https://www.youtube.com/embed/5ieXv9rnYaw?si=dXfpZWydYhFJe75C?enablejsapi=1&modestbranding=1&playsinline=1&color=white"
+                        frameborder="0" allowfullscreen)
+                    .video-employer__info
+                        .video-employer__top
+                            .video-employer__title Азат Мингалеев
+                            a.video-employer__link(href="https://www.youtube.com/watch?v=5ieXv9rnYaw&ab_channel=%D0%9F%D0%BE%D0%B2%D0%B5%D1%81%D1%82%D0%BE%D0%BA.%D0%BD%D0%B5%D1%82" target="_blank") Смотреть на Youtube
+                        .video-employer__desc Обязанности призывника перед военкоматом в 2023 году
+
+        .button-3.min-w-429.video-load-more Загрузить еще

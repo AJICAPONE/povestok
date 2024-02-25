@@ -34,7 +34,7 @@ header
         .container
             .header-bottom__container
                 .header-bottom__contacts
-                    a.h-logo(href="/")
+                    a.h-logo(href="/" title="Лого")
                         +icon2('logo2')
                     .h-contacts
                         a.h-phone(href='tel:88006003158')
@@ -59,18 +59,18 @@ header
                         .h-navbar
                             nav.h-menu
                                 ul.h-menu__list
-                                    li.h-menu__item.h-menu__item-depth1
-                                        .h-item__link(href="/") услуги
-                                        .h-menu__item-depth2__wrap
+                                    li.h-menu__item.h-menu__item-depth1(data-tab-menu="menu-1")
+                                        a.h-item__link(href="/") услуги
+                                        .h-menu__item-depth2__wrap(data-menu="menu-1")
                                             .h-menu__item-depth2
                                                 a.h-item__item-depth2(href="/") Призывникам
                                                 a.h-item__item-depth2(href="/") Военнослужащим
                                                 a.h-item__item-depth2(href="/") Акции
                                     li.h-menu__item
-                                        .h-item__link практика
-                                    li.h-menu__item.h-menu__item-depth1
-                                        .h-item__link база знаний
-                                        .h-menu__item-depth2__wrap
+                                        a.h-item__link(href="/") практика
+                                    li.h-menu__item.h-menu__item-depth1(data-tab-menu="menu-2")
+                                        a.h-item__link(href="/") база знаний
+                                        .h-menu__item-depth2__wrap(data-menu="menu-2")
                                             .h-menu__item-depth2
                                                 a.h-item__item-depth2(href="/") Статьи
                                                 a.h-item__item-depth2(href="/") ОНлайн-Консультация
@@ -115,6 +115,7 @@ header
                         +icon('search')
     .header-nav-menu__bar
         .container
+
             .h-nav__rating
                 .h-nav__rating-item
                     .h-nav__item-top
